@@ -1,6 +1,6 @@
-<center> What is Database ?</center>
+## What is Database ?
 
-Database : It is organized collection of data so that it can be easily accessed.
+Database : It is organized collection of data so that it can be easily accessed.<br>
 To manage this databases , DBMS (database management system) is used.
 
 Types of DBMS :
