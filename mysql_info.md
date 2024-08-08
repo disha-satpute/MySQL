@@ -37,9 +37,9 @@ It’s a standardized language used for managing and manipulating relational dat
 
 #### MySQL
 
-MySQL is an open-source relational database management system (RDBMS) that uses SQL as its primary language for managing databases.<br.<br>
+MySQL is an open-source relational database management system (RDBMS) that uses SQL as its primary language for managing databases.<br>
 
-DDL, DML, and DCL are subsets of SQL (Structured Query Language) used to interact with and manage relational databases. Each subset serves a distinct purpose in database management:<br>
+DDL, DML, and DCL are subsets of SQL (Structured Query Language) used to interact with and manage relational databases. Each subset serves a distinct purpose in database management:
 
 •	DDL: Defines and manages database schema and structure.
 •	DML: Manages and manipulates data within the database tables.
