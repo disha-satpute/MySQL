@@ -49,9 +49,7 @@ DDL, DML, and DCL are subsets of SQL (Structured Query Language) used to interac
 Data Definition Language (DDL) commands are used to define and manage the structure of database objects such as tables, indexes, and schemas. They deal with the schema of the database and manage the metadata, rather than the data itself. Here’s an overview of the main DDL commands:
 
 1. CREATE -
-The CREATE command is used to create new database objects. This includes tables, indexes, views, and schemas.
-
-•	CREATE TABLE: Defines a new table and its columns.
+The CREATE command is used to create new database objects. This includes tables, indexes, views, and schemas.<br>
 ```bash
 CREATE TABLE table_name (
     column1 datatype constraints,
@@ -60,9 +58,7 @@ CREATE TABLE table_name (
 );
 ```
 2. ALTER -
-The ALTER command is used to modify existing database objects.
-
-•	ALTER TABLE: Changes the structure of an existing table. Common operations include adding, deleting, or modifying columns, and adding constraints.
+The ALTER command is used to modify existing database objects.<br>
 ```bash
 ALTER TABLE table_name
 ADD column_name datatype constraints;
@@ -78,23 +74,19 @@ ADD CONSTRAINT constraint_name constraint_definition;
 ```
 
 3. DROP -
-The DROP command removes database objects. It permanently deletes the object and its data.
-•	DROP TABLE: Deletes a table and all of its data.
+The DROP command removes database objects. It permanently deletes the object and its data.<br>
 ```bash
 DROP TABLE table_name;
 ```
 
 4. TRUNCATE -
-While not strictly part of DDL in all SQL dialects, TRUNCATE is often included for completeness. It removes all rows from a table but does not remove the table structure itself. It is typically faster than a DELETE operation.
-
-•	TRUNCATE TABLE: Clears all data from a table.
+While not strictly part of DDL in all SQL dialects, TRUNCATE is often included for completeness. It removes all rows from a table but does not remove the table structure itself. It is typically faster than a DELETE operation.<br>
 ```bash
 TRUNCATE TABLE table_name;
 ```
 
 5. RENAME
-The RENAME command is used to change the name of an existing database object.
-•	RENAME TABLE: Changes the name of a table.
+The RENAME command is used to change the name of an existing database object.<br>
 ```bash
 RENAME TABLE old_table_name TO new_table_name;
 ```
