@@ -99,7 +99,7 @@ The RENAME command is used to change the name of an existing database object.
 RENAME TABLE old_table_name TO new_table_name;
 ```
 
-Additional Considerations
+Additional Considerations -<br>
 •	Constraints: When using ALTER TABLE, you can also add or remove constraints (e.g., PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK).
 •	Permissions: Database administrators use DDL commands to control permissions and access to database objects.
 DDL commands are crucial for setting up and maintaining the structure of a database, ensuring that it meets the needs of the application and users.
