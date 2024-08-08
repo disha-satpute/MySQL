@@ -78,7 +78,7 @@ ADD CONSTRAINT constraint_name constraint_definition;
 ```
 
 3. DROP -
-The DROP command removes database objects. It permanently deletes the object and its data.
+The DROP command removes database objects. It permanently deletes the object and its data.<br>
 •	DROP TABLE: Deletes a table and all of its data.
 ```bash
 DROP TABLE table_name;
@@ -93,15 +93,15 @@ TRUNCATE TABLE table_name;
 ```
 
 5. RENAME
-The RENAME command is used to change the name of an existing database object.
+The RENAME command is used to change the name of an existing database object.<br>
 •	RENAME TABLE: Changes the name of a table.
 ```bash
 RENAME TABLE old_table_name TO new_table_name;
 ```
 
 Additional Considerations -<br>
-•	Constraints: When using ALTER TABLE, you can also add or remove constraints (e.g., PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK).
-•	Permissions: Database administrators use DDL commands to control permissions and access to database objects.
+•	Constraints: When using ALTER TABLE, you can also add or remove constraints (e.g., PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK).<br>
+•	Permissions: Database administrators use DDL commands to control permissions and access to database objects.<br>
 DDL commands are crucial for setting up and maintaining the structure of a database, ensuring that it meets the needs of the application and users.
 
 
