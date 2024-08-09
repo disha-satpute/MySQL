@@ -199,9 +199,9 @@ Granting Permissions:
 
 GRANT privilege_type ON object TO user_or_role;
 
-o	Privilege Types: Examples include SELECT, INSERT, UPDATE, DELETE, EXECUTE, etc.
-o	Object: This could be a table, view, schema, or other database objects.
-o	User or Role: Specifies the user or role to whom the privileges are granted.
+o	Privilege Types: Examples include SELECT, INSERT, UPDATE, DELETE, EXECUTE, etc.<br>
+o	Object: This could be a table, view, schema, or other database objects.<br>
+o	User or Role: Specifies the user or role to whom the privileges are granted.<br>
 
 Examples:
 
