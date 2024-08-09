@@ -39,9 +39,9 @@ MySQL : MySQL is an open-source relational database management system (RDBMS) th
 
 DDL, DML, and DCL are subsets of SQL (Structured Query Language) used to interact with and manage relational databases. Each subset serves a distinct purpose in database management:
 
-•	DDL: Defines and manages database schema and structure.
-•	DML: Manages and manipulates data within the database tables.
-•	DCL: Controls access and permissions to the database and its objects.
+•	DDL: Defines and manages database schema and structure.<br>
+•	DML: Manages and manipulates data within the database tables.<br>
+•	DCL: Controls access and permissions to the database and its objects.<br>
 
 
 ## DDL
