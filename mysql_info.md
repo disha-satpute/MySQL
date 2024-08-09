@@ -187,6 +187,57 @@ DELETE FROM table_name;
 ```
 __________________________________________________________________________________________________________________________________________________
 
+## DCL
+
+Data Control Language (DCL) commands are used to control access to data within a database. They manage permissions and access rights, ensuring that only authorized users can perform specific actions on database objects. <br>Here’s a detailed look at the main DCL commands:
+
+1. GRANT
+
+The GRANT command is used to provide specific permissions or rights to users or roles on database objects. This command allows administrators to control who can perform operations such as querying, updating, or modifying the data.
+
+•	Granting Permissions:
+
+GRANT privilege_type ON object TO user_or_role;
+o	Privilege Types: Examples include SELECT, INSERT, UPDATE, DELETE, EXECUTE, etc.
+o	Object: This could be a table, view, schema, or other database objects.
+o	User or Role: Specifies the user or role to whom the privileges are granted.
+Examples:
+o	Granting SELECT permission on a table:
+```sql
+GRANT SELECT ON employees TO john_doe;
+```
+o	Granting INSERT and UPDATE permissions on a table:
+```sql
+GRANT INSERT, UPDATE ON employees TO manager_role;
+```
+o	Granting EXECUTE permission on a stored procedure:
+```sql
+GRANT EXECUTE ON procedure_name TO user_role;
+```
+
+2. REVOKE
+
+The REVOKE command is used to remove previously granted permissions from users or roles. This helps maintain security by ensuring that users no longer have access to data or operations they should not perform.
+
+o	Revoking Permissions:
+```sql
+REVOKE privilege_type ON object FROM user_or_role;
+```
+Examples:
+
+o	Revoking SELECT permission from a user:
+```sql
+REVOKE SELECT ON employees FROM john_doe;
+```
+o	Revoking INSERT and UPDATE permissions from a role:
+```sql
+REVOKE INSERT, UPDATE ON employees FROM manager_role;
+```
+o	Revoking EXECUTE permission on a procedure:
+```sql
+REVOKE EXECUTE ON procedure_name FROM user_role;
+```
+
 
 
 
