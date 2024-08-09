@@ -35,7 +35,7 @@ e.g. MongoDB,Redis,Firebase Realtime Database<br>
 
 It’s a standardized language used for managing and manipulating relational databases. SQL allows users to perform a variety of tasks, such as querying data, updating records, deleting data, and creating or modifying database structures.<br>
 
-MySQL : MySQL is an open-source relational database management system (RDBMS) that uses SQL as its primary language for managing databases.<br>
+**MySQL** : MySQL is an open-source relational database management system (RDBMS) that uses SQL as its primary language for managing databases.<br>
 
 DDL, DML, and DCL are subsets of SQL (Structured Query Language) used to interact with and manage relational databases. Each subset serves a distinct purpose in database management:
 
