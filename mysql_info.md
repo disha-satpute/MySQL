@@ -7,7 +7,7 @@ Types of DBMS :
 1)	Relational Database
 2)	Non-Relational Database
 
-•	Relational Database : <br>
+o	Relational Database : <br>
 In this Database,data stored in table (rows & columns) format<br>
 e.g. MySql,Oracle,PostgreSQL,SQLite,SQLserver<br>
   ```sql
@@ -18,7 +18,7 @@ e.g. MySql,Oracle,PostgreSQL,SQLite,SQLserver<br>
 |       |          |                   |              |
 +----------------+-------------+----------------------+
    ```
-•	Non-Relational Database :<br>
+o	Non-Relational Database :<br>
 In this Database , data stored in Key-Value pair<br>
 e.g. MongoDB,Redis,Firebase Realtime Database<br>
     ```sql
@@ -39,9 +39,9 @@ MySQL : MySQL is an open-source relational database management system (RDBMS) th
 
 DDL, DML, and DCL are subsets of SQL (Structured Query Language) used to interact with and manage relational databases. Each subset serves a distinct purpose in database management:
 
-•	DDL: Defines and manages database schema and structure.<br>
-•	DML: Manages and manipulates data within the database tables.<br>
-•	DCL: Controls access and permissions to the database and its objects.<br>
+o	DDL: Defines and manages database schema and structure.<br>
+o	DML: Manages and manipulates data within the database tables.<br>
+o	DCL: Controls access and permissions to the database and its objects.<br>
 
 
 ## DDL
@@ -108,27 +108,27 @@ The SELECT command retrieves data from one or more tables and is the most common
 ```sql
 SELECT column1, column2 FROM table_name;
 ```
-•	With Conditions:
+o	With Conditions:
 ```sql
 SELECT column1, column2 FROM table_name WHERE condition;
 ```
-•	With Sorting:
+o	With Sorting:
 ```sql
 SELECT column1, column2 FROM table_name ORDER BY column1 ASC|DESC;
 ```
-•	With Aggregation:
+o	With Aggregation:
 ```sql
 SELECT COUNT(*), AVG(column_name) FROM table_name;
 ```
-•	With Joins:
+o	With Joins:
 ```sql
 SELECT columns FROM table1 JOIN table2 ON table1.column = table2.column;
 ```
-•	With Grouping:
+o	With Grouping:
 ```sql
 SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name;
 ```
-•	With Subqueries:
+o	With Subqueries:
 ```sql
 SELECT column1 FROM table_name WHERE column2 IN (SELECT column2 FROM another_table);
 ```
@@ -137,15 +137,15 @@ SELECT column1 FROM table_name WHERE column2 IN (SELECT column2 FROM another_tab
 
 The INSERT INTO command adds new rows of data into a table.
 
-•	Inserting Specific Columns:
+o	Inserting Specific Columns:
 ```sql
 INSERT INTO table_name (column1, column2) VALUES (value1, value2);
 ```
-•	Inserting All Columns:
+o	Inserting All Columns:
 ```sql
 INSERT INTO table_name VALUES (value1, value2, ...);
 ```
-•	Inserting from Another Table:
+o	Inserting from Another Table:
 ```sql
 INSERT INTO table_name (column1, column2)
 SELECT column1, column2 FROM another_table WHERE condition;
@@ -155,18 +155,18 @@ SELECT column1, column2 FROM another_table WHERE condition;
 
 The UPDATE command modifies existing data in a table.
 
-•	Updating Specific Rows:
+o	Updating Specific Rows:
 ```sql
 UPDATE table_name
 SET column1 = value1, column2 = value2
 WHERE condition;
 ```
-•	Updating All Rows:
+o	Updating All Rows:
 ```sql
 UPDATE table_name
 SET column1 = value1;
 ```
-•	Conditional Updates:
+o	Conditional Updates:
 ```sql
 UPDATE table_name
 SET column1 = value1
@@ -177,11 +177,11 @@ WHERE column2 = condition;
 
 The DELETE command removes rows from a table. Be cautious with DELETE as it can permanently remove data.
 
-•	Deleting Specific Rows:
+o	Deleting Specific Rows:
 ```sql
 DELETE FROM table_name WHERE condition;
 ```
-•	Deleting All Rows:
+o	Deleting All Rows:
 ```sql
 DELETE FROM table_name;
 ```
@@ -191,17 +191,20 @@ ________________________________________________________________________________
 
 Data Control Language (DCL) commands are used to control access to data within a database. They manage permissions and access rights, ensuring that only authorized users can perform specific actions on database objects. <br>Here’s a detailed look at the main DCL commands:
 
-1. GRANT
+1. GRANT -
 
 The GRANT command is used to provide specific permissions or rights to users or roles on database objects. This command allows administrators to control who can perform operations such as querying, updating, or modifying the data.
 
-•	Granting Permissions:
+Granting Permissions:
 
 GRANT privilege_type ON object TO user_or_role;
+
 o	Privilege Types: Examples include SELECT, INSERT, UPDATE, DELETE, EXECUTE, etc.
 o	Object: This could be a table, view, schema, or other database objects.
 o	User or Role: Specifies the user or role to whom the privileges are granted.
+
 Examples:
+
 o	Granting SELECT permission on a table:
 ```sql
 GRANT SELECT ON employees TO john_doe;
@@ -215,7 +218,7 @@ o	Granting EXECUTE permission on a stored procedure:
 GRANT EXECUTE ON procedure_name TO user_role;
 ```
 
-2. REVOKE
+2. REVOKE -
 
 The REVOKE command is used to remove previously granted permissions from users or roles. This helps maintain security by ensuring that users no longer have access to data or operations they should not perform.
 
