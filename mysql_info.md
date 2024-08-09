@@ -10,7 +10,7 @@ Types of DBMS :
 •	Relational Database : <br>
 In this Database,data stored in table (rows & columns) format<br>
 e.g. MySql,Oracle,PostgreSQL,SQLite,SQLserver<br>
-  ```bash
+  ```sql
 +----------------+-------------+----------------------+
 | Id    | username | email             | password     |
 +----------------+------------+-----------------------+
@@ -21,7 +21,7 @@ e.g. MySql,Oracle,PostgreSQL,SQLite,SQLserver<br>
 •	Non-Relational Database :<br>
 In this Database , data stored in Key-Value pair<br>
 e.g. MongoDB,Redis,Firebase Realtime Database<br>
-    ```bash
+    ```sql
     {
         "Id":101,
         "name":"Disha",
@@ -50,7 +50,7 @@ Data Definition Language (DDL) commands are used to define and manage the struct
 
 1. CREATE -
 The CREATE command is used to create new database objects. This includes tables, indexes, views, and schemas.<br>
-```bash
+```sql
 CREATE TABLE table_name (
     column1 datatype constraints,
     column2 datatype constraints,
@@ -59,7 +59,7 @@ CREATE TABLE table_name (
 ```
 2. ALTER -
 The ALTER command is used to modify existing database objects.<br>
-```bash
+```sql
 ALTER TABLE table_name
 ADD column_name datatype constraints;
 
@@ -75,19 +75,19 @@ ADD CONSTRAINT constraint_name constraint_definition;
 
 3. DROP -
 The DROP command removes database objects. It permanently deletes the object and its data.<br>
-```bash
+```sql
 DROP TABLE table_name;
 ```
 
 4. TRUNCATE -
 While not strictly part of DDL in all SQL dialects, TRUNCATE is often included for completeness. It removes all rows from a table but does not remove the table structure itself. It is typically faster than a DELETE operation.<br>
-```bash
+```sql
 TRUNCATE TABLE table_name;
 ```
 
 5. RENAME
 The RENAME command is used to change the name of an existing database object.<br>
-```bash
+```sql
 RENAME TABLE old_table_name TO new_table_name;
 ```
 
