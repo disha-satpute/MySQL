@@ -243,4 +243,3 @@ REVOKE EXECUTE ON procedure_name FROM user_role;
 
 
 
-
