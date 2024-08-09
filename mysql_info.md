@@ -46,9 +46,10 @@ DDL, DML, and DCL are subsets of SQL (Structured Query Language) used to interac
 
 ## DDL
 
-Data Definition Language (DDL) commands are used to define and manage the structure of database objects such as tables, indexes, and schemas. They deal with the schema of the database and manage the metadata, rather than the data itself. Here’s an overview of the main DDL commands:
+Data Definition Language (DDL) commands are used to define and manage the structure of database objects such as tables, indexes, and schemas. They deal with the schema of the database and manage the metadata, rather than the data itself. <br>Here’s an overview of the main DDL commands:
 
 1. CREATE -
+
 The CREATE command is used to create new database objects. This includes tables, indexes, views, and schemas.<br>
 ```sql
 CREATE TABLE table_name (
@@ -58,6 +59,7 @@ CREATE TABLE table_name (
 );
 ```
 2. ALTER -
+
 The ALTER command is used to modify existing database objects.<br>
 ```sql
 ALTER TABLE table_name
@@ -74,27 +76,116 @@ ADD CONSTRAINT constraint_name constraint_definition;
 ```
 
 3. DROP -
+
 The DROP command removes database objects. It permanently deletes the object and its data.<br>
 ```sql
 DROP TABLE table_name;
 ```
 
 4. TRUNCATE -
+
 While not strictly part of DDL in all SQL dialects, TRUNCATE is often included for completeness. It removes all rows from a table but does not remove the table structure itself. It is typically faster than a DELETE operation.<br>
 ```sql
 TRUNCATE TABLE table_name;
 ```
 
-5. RENAME
+5. RENAME -
+
 The RENAME command is used to change the name of an existing database object.<br>
 ```sql
 RENAME TABLE old_table_name TO new_table_name;
 ```
+__________________________________________________________________________________________________________________________________________________
 
-Additional Considerations -<br>
-•	Constraints: When using ALTER TABLE, you can also add or remove constraints (e.g., PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK).<br>
-•	Permissions: Database administrators use DDL commands to control permissions and access to database objects.<br>
-DDL commands are crucial for setting up and maintaining the structure of a database, ensuring that it meets the needs of the application and users.
+## DML
+
+Data Manipulation Language (DML) commands are used to manage and manipulate data within the tables of a database. Unlike Data Definition Language (DDL), which deals with the structure of the database, DML commands focus on the data itself.<br> Here’s a detailed look at the main DML commands:
+
+1. SELECT -
+
+The SELECT command retrieves data from one or more tables and is the most commonly used DML command. <br>It can fetch specific columns, all columns, or aggregated data.
+
+```sql
+SELECT column1, column2 FROM table_name;
+```
+•	With Conditions:
+```sql
+SELECT column1, column2 FROM table_name WHERE condition;
+```
+•	With Sorting:
+```sql
+SELECT column1, column2 FROM table_name ORDER BY column1 ASC|DESC;
+```
+•	With Aggregation:
+```sql
+SELECT COUNT(*), AVG(column_name) FROM table_name;
+```
+•	With Joins:
+```sql
+SELECT columns FROM table1 JOIN table2 ON table1.column = table2.column;
+```
+•	With Grouping:
+```sql
+SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name;
+```
+•	With Subqueries:
+```sql
+SELECT column1 FROM table_name WHERE column2 IN (SELECT column2 FROM another_table);
+```
+
+2. INSERT INTO -
+
+The INSERT INTO command adds new rows of data into a table.
+
+•	Inserting Specific Columns:
+```sql
+INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+```
+•	Inserting All Columns:
+```sql
+INSERT INTO table_name VALUES (value1, value2, ...);
+```
+•	Inserting from Another Table:
+```sql
+INSERT INTO table_name (column1, column2)
+SELECT column1, column2 FROM another_table WHERE condition;
+```
+
+3. UPDATE -
+
+The UPDATE command modifies existing data in a table.
+
+•	Updating Specific Rows:
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2
+WHERE condition;
+```
+•	Updating All Rows:
+```sql
+UPDATE table_name
+SET column1 = value1;
+```
+•	Conditional Updates:
+```sql
+UPDATE table_name
+SET column1 = value1
+WHERE column2 = condition;
+```
+
+4. DELETE -
+
+The DELETE command removes rows from a table. Be cautious with DELETE as it can permanently remove data.
+
+•	Deleting Specific Rows:
+```sql
+DELETE FROM table_name WHERE condition;
+```
+•	Deleting All Rows:
+```sql
+DELETE FROM table_name;
+```
+__________________________________________________________________________________________________________________________________________________
 
 
 
