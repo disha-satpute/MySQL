@@ -11,12 +11,12 @@ o	Relational Database : <br>
 In this Database,data stored in table (rows & columns) format<br>
 e.g. MySql,Oracle,PostgreSQL,SQLite,SQLserver<br>
   ```sql
-+----------------+-------------+----------------------+
++-------+----------+-------------------+--------------+
 | Id    | username | email             | password     |
-+----------------+------------+-----------------------+
-| 101   |  Disha   | disha.g@gmail.com | disha        |
++------------------+-------------------+--------------+
+| 101   |  Disha   | disha44@gmail.com | di1234       |
 |       |          |                   |              |
-+----------------+-------------+----------------------+
++-------+----------+-------------------+--------------+
    ```
 o	Non-Relational Database :<br>
 In this Database , data stored in Key-Value pair<br>
@@ -242,7 +242,9 @@ REVOKE EXECUTE ON procedure_name FROM user_role;
 ```
 
 ## Implementation
-You can Implement all commands of DDL,DML,DCL by giving reference of companyDB sql script which is available in this Repository.<br>
-You can also <a href="https://github.com/disha-satpute/MySQL/blob/main/companyDB.sql">Click Here</a> To get direct access to that Sql Script.
+
+o You can Implement all commands of DDL,DML,DCL by giving reference of 'companyDB.sql' script which is available in this Repository.<br>
+
+o You can also <a href="https://github.com/disha-satpute/MySQL/blob/main/companyDB.sql">Click Here</a> To get direct access to that Sql Script.
 
 
