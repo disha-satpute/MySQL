@@ -11,24 +11,27 @@ o	Relational Database : <br>
 In this Database,data stored in table (rows & columns) format<br>
 e.g. MySql,Oracle,PostgreSQL,SQLite,SQLserver<br>
   ```sql
+
 +-------+----------+-------------------+--------------+
 | Id    | username | email             | password     |
 +------------------+-------------------+--------------+
 | 101   |  Disha   | disha44@gmail.com | di1234       |
 |       |          |                   |              |
 +-------+----------+-------------------+--------------+
+
    ```
 o	Non-Relational Database :<br>
 In this Database , data stored in Key-Value pair<br>
 e.g. MongoDB,Redis,Firebase Realtime Database<br>
-    ```sql
+
+```sql
     {
         "Id":101,
         "name":"Disha",
         "email": "disha.g@gmail.com",
         "password": "disha";
     };
-    ```
+```
 <hr/>
 
 ## Structure Query Language
