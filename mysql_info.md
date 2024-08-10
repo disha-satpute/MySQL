@@ -264,8 +264,7 @@ CHECK <br>
 DEFAULT <br>
 
 1. NOT NULL -
-   -
-
+   
 The NOT NULL constraint ensures that a column cannot have a NULL value. It forces the field to always contain a value.
 ```sql
 CREATE TABLE Employees (
@@ -278,7 +277,6 @@ CREATE TABLE Employees (
 Here, FirstName and LastName cannot be null.
 
 2. UNIQUE -
-   -
 
 The UNIQUE constraint ensures that all the values in a column are different. This is similar to PRIMARY KEY, but a table can have multiple UNIQUE constraints, while it can only have one PRIMARY KEY.
 
@@ -291,7 +289,6 @@ CREATE TABLE Employees (
 In this example, the Email field must have unique values for each employee.
 
 3. PRIMARY KEY -
-   -
 
 The PRIMARY KEY constraint uniquely identifies each record in a table. A table can only have one primary key, which can be a single column or a combination of multiple columns (composite key).
 
@@ -305,8 +302,7 @@ CREATE TABLE Employees (
 The EmployeeID is a unique identifier for each employee.
 
 4. FOREIGN KEY -
-   -
-
+   
 The FOREIGN KEY constraint is used to link two tables. It is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table.
 ```sql
 CREATE TABLE Departments (
@@ -325,7 +321,7 @@ CREATE TABLE Employees (
 Here, DepartmentID in the Employees table is a foreign key referencing DepartmentID in the Departments table.
 
 5. CHECK -
-   -
+   
 The CHECK constraint ensures that all values in a column satisfy a specific condition.
 ```sql
 CREATE TABLE Employees (
