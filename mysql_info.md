@@ -302,7 +302,7 @@ CREATE TABLE Employees (
 );
 ```
 The EmployeeID is a unique identifier for each employee.
-</hr>
+<hr/>
 
 4. FOREIGN KEY -
    
