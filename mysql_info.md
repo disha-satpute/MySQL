@@ -275,6 +275,7 @@ CREATE TABLE Employees (
 );
 ```
 Here, FirstName and LastName cannot be null.
+<hr/>
 
 2. UNIQUE -
 
