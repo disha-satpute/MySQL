@@ -256,15 +256,15 @@ SQL constraints are rules enforced on data columns in a database table to ensure
 
 Types of SQL Constraints :
 
-NOT NULL
-UNIQUE
-PRIMARY KEY
-FOREIGN KEY
-CHECK
-DEFAULT
+NOT NULL <br>
+UNIQUE <br>
+PRIMARY KEY <br>
+FOREIGN KEY <br>
+CHECK <br>
+DEFAULT <br>
 
 1. NOT NULL -
-
+   
 The NOT NULL constraint ensures that a column cannot have a NULL value. It forces the field to always contain a value.
 ```sql
 CREATE TABLE Employees (
@@ -303,7 +303,7 @@ CREATE TABLE Employees (
 The EmployeeID is a unique identifier for each employee.
 
 4. FOREIGN KEY -
-
+   
 The FOREIGN KEY constraint is used to link two tables. It is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table.
 ```sql
 CREATE TABLE Departments (
@@ -322,6 +322,7 @@ CREATE TABLE Employees (
 Here, DepartmentID in the Employees table is a foreign key referencing DepartmentID in the Departments table.
 
 5. CHECK -
+   
 The CHECK constraint ensures that all values in a column satisfy a specific condition.
 ```sql
 CREATE TABLE Employees (
@@ -349,9 +350,7 @@ CREATE TABLE Employees (
 ```
 Here, StartDate will default to the current date if no date is provided.
 
----------------------------------------------------------------------------------------------------------------------------------------------------
-
-Using Constraints in Table Creation :
+### Using Constraints in Table Creation :
 
 When creating a table, constraints are defined at the column level or table level:
 
