@@ -288,6 +288,7 @@ CREATE TABLE Employees (
 );
 ```
 In this example, the Email field must have unique values for each employee.
+<hr/>
 
 3. PRIMARY KEY -
 
@@ -301,6 +302,7 @@ CREATE TABLE Employees (
 );
 ```
 The EmployeeID is a unique identifier for each employee.
+</hr>
 
 4. FOREIGN KEY -
    
@@ -320,6 +322,7 @@ CREATE TABLE Employees (
 );
 ```
 Here, DepartmentID in the Employees table is a foreign key referencing DepartmentID in the Departments table.
+<hr/>
 
 5. CHECK -
    
@@ -336,6 +339,7 @@ CREATE TABLE Employees (
 );
 ```
 This example ensures that the Age is at least 18 and the Salary is greater than 0.
+<hr/>
 
 6. DEFAULT -
 
@@ -349,6 +353,7 @@ CREATE TABLE Employees (
 );
 ```
 Here, StartDate will default to the current date if no date is provided.
+<hr/>
 
 ### Using Constraints in Table Creation :
 
