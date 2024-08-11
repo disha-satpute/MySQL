@@ -45,6 +45,8 @@ DDL, DML, and DCL are subsets of SQL (Structured Query Language) used to interac
 o	DDL: Defines and manages database schema and structure.<br>
 o	DML: Manages and manipulates data within the database tables.<br>
 o	DCL: Controls access and permissions to the database and its objects.<br>
+o TCL: Manages database transactions, allowing control over committing, rolling back, and setting savepoints.<br>
+o DQL: Focuses on querying and retrieving data from the database, primarily using the SELECT statement.<br>
 
 
 ## DDL
@@ -243,6 +245,92 @@ o	Revoking EXECUTE permission on a procedure:
 ```sql
 REVOKE EXECUTE ON procedure_name FROM user_role;
 ```
+__________________________________________________________________________________________________________________________________________________
+
+## TCL
+Transaction Control Language (TCL)
+TCL commands are used to manage transactions in a database. A transaction is a sequence of one or more SQL statements that are executed as a single unit of work.<br> TCL commands help in controlling the execution of these transactions, ensuring the integrity and consistency of the database.
+
+Common TCL Commands:
+COMMIT
+ROLLBACK
+SAVEPOINT
+SET TRANSACTION
+
+o COMMIT:
+
+The COMMIT command is used to save all changes made during the current transaction. Once committed, the changes are permanent and cannot be undone.
+```sql
+BEGIN;
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary)
+VALUES ('John', 'Doe', 1, 50000);
+
+COMMIT;
+```
+In this example, the INSERT operation is part of a transaction, and the COMMIT command saves the changes permanently.
+
+o ROLLBACK:
+
+The ROLLBACK command is used to undo changes made in the current transaction. It reverts the database to the last committed state, effectively canceling the changes.
+```sql
+BEGIN;
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary)
+VALUES ('Jane', 'Doe', 2, 60000);
+
+ROLLBACK;
+```
+In this case, the ROLLBACK command undoes the INSERT operation, so the new record is not saved.
+
+o SAVEPOINT:
+
+The SAVEPOINT command sets a point within a transaction to which you can later roll back without affecting the entire transaction. It allows for more granular control of transaction management.
+```sql
+BEGIN;
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary)
+VALUES ('Alice', 'Smith', 3, 70000);
+
+SAVEPOINT savepoint1;
+
+INSERT INTO Employees (FirstName, LastName, DepartmentID, Salary)
+VALUES ('Bob', 'Brown', 4, 55000);
+
+ROLLBACK TO savepoint1;
+
+COMMIT;
+```
+Here, after the second INSERT, the transaction is rolled back to savepoint1, so the second insert is undone, but the first insert remains.
+
+o SET TRANSACTION:
+
+The SET TRANSACTION command is used to specify the characteristics of the transaction, such as isolation level.
+
+```sql
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+BEGIN;
+
+-- Transaction statements
+
+COMMIT;
+```
+This sets the isolation level of the transaction, which controls how changes made in the transaction are visible to other transactions.
+__________________________________________________________________________________________________________________________________________________
+## DQL
+
+DQL is primarily concerned with the retrieval of data from the database. It consists of the SELECT statement, which is used to query the database and fetch the desired data.
+
+o SELECT:
+
+The SELECT command is used to query data from one or more tables in a database. It allows you to specify columns, apply filters, sort results, and perform joins.
+```sql
+SELECT FirstName, LastName, Salary
+FROM Employees
+WHERE DepartmentID = 1
+ORDER BY Salary DESC;
+```
+This query selects the FirstName, LastName, and Salary columns from the Employees table where the DepartmentID is 1, and sorts the results by Salary in descending order.
 
 ## Implementation
 
