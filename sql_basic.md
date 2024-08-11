@@ -488,27 +488,33 @@ SQL data types define the kind of data that can be stored in a table's columns. 
 
 Common SQL Data Types :
 
-1. Numeric Data Types -
+**1. Numeric Data Types -**
 
-INT / INTEGER: Stores whole numbers (e.g., 10, 200).
+INT / INTEGER : Stores whole numbers (e.g., 10, 200).
 
-SMALLINT: Stores smaller whole numbers, uses less storage than INT.
+SMALLINT : Stores smaller whole numbers, uses less storage than INT.
 
-BIGINT: Stores large whole numbers, larger range than INT.
+BIGINT : Stores large whole numbers, larger range than INT.
 
-DECIMAL(p, s) / NUMERIC(p, s): Stores fixed-point numbers with precision p and scale s (e.g., DECIMAL(10, 2) for monetary values).
+DECIMAL(p, s) / NUMERIC(p, s) : Stores fixed-point numbers with precision p and scale s (e.g., DECIMAL(10, 2) for monetary values).
 
-FLOAT / REAL / DOUBLE PRECISION: Stores floating-point numbers, used for approximate values.
+FLOAT / REAL / DOUBLE PRECISION : Stores floating-point numbers, used for approximate values.
 
-2. Character String Data Types -
-CHAR(n) / CHARACTER(n): Fixed-length string (e.g., CHAR(10) always uses 10 characters).
-VARCHAR(n) / CHARACTER VARYING(n): Variable-length string (e.g., VARCHAR(50) can store up to 50 characters).
-TEXT: Variable-length string of any size, often used for large text fields.
+**2. Character String Data Types -**
 
-3. Binary Data Types
-BINARY(n): Fixed-length binary data.
-VARBINARY(n): Variable-length binary data.
-BLOB: Binary Large Object, used to store large binary data such as images or files.
+CHAR(n) / CHARACTER(n) : Fixed-length string (e.g., CHAR(10) always uses 10 characters).
+
+VARCHAR(n) / CHARACTER VARYING(n) : Variable-length string (e.g., VARCHAR(50) can store up to 50 characters).
+
+TEXT : Variable-length string of any size, often used for large text fields.
+
+**3. Binary Data Types -**
+
+BINARY(n) : Fixed-length binary data.
+
+VARBINARY(n) : Variable-length binary data.
+
+BLOB : Binary Large Object, used to store large binary data such as images or files.
 
 4. Date and Time Data Types
 DATE: Stores a date (year, month, day) (e.g., '2024-08-10').
