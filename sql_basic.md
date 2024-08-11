@@ -551,31 +551,91 @@ POLYGON : Stores a shape defined by multiple points.
 JSON : Stores JSON (JavaScript Object Notation) formatted data.
 
 Example of Defining Data Types in a Table -
+```sql
 
-``sql
-CREATE TABLE Employees (
-    EmployeeID INT PRIMARY KEY,
-    FirstName VARCHAR(50),
-    LastName VARCHAR(50),
+CREATE TABLE DataTypeExamples (
+    -- Numeric Data Types
+    SmallNumber SMALLINT,
+    LargeNumber BIGINT,
+    ExactNumber DECIMAL(10, 2),
+    ApproxNumber FLOAT,
+
+    -- Character String Data Types
+    FixedString CHAR(10),
+    VariableString VARCHAR(50),
+    LargeText TEXT,
+
+    -- Binary Data Types
+    FixedBinary BINARY(10),
+    VariableBinary VARBINARY(50),
+    LargeBinaryData BLOB,
+
+    -- Date and Time Data Types
     BirthDate DATE,
-    Salary DECIMAL(10, 2),
+    EventTime TIME,
+    DateTimeInfo DATETIME,
+    TimeStampInfo TIMESTAMP,
+    YearOnly YEAR,
+
+    -- Boolean Data Type
     IsActive BOOLEAN,
-    ProfilePicture BLOB
+
+    -- Enumerated Data Type
+    Size ENUM('small', 'medium', 'large'),
+
+    -- Spatial Data Types
+    LocationPoint POINT,
+    Route LINESTRING,
+    Area POLYGON,
+
+    -- JSON Data Type
+    JsonData JSON
 );
+
 ```
+Breakdown of the Table :
 
-In this example:
+SmallNumber uses the *SMALLINT* data type to store smaller integers.
 
-EmployeeID is an integer.
+LargeNumber uses the BIGINT data type to store larger integers.
 
-FirstName and LastName are variable-length strings.
+ExactNumber uses the DECIMAL data type to store exact numerical values with two decimal places.
 
-BirthDate stores the date of birth.
+ApproxNumber uses the FLOAT data type to store approximate numerical values.
 
-Salary is a fixed-point number with two decimal places.
+FixedString uses the CHAR data type to store a fixed-length string of 10 characters.
 
-IsActive stores a boolean value.
+VariableString uses the VARCHAR data type to store a variable-length string of up to 50 characters.
 
-ProfilePicture stores binary data, such as an image.
+LargeText uses the TEXT data type for large amounts of text data.
+
+FixedBinary uses the BINARY data type for a fixed-length binary data of 10 bytes.
+
+VariableBinary uses the VARBINARY data type for variable-length binary data of up to 50 bytes.
+
+LargeBinaryData uses the BLOB data type to store large binary data, such as files or images.
+
+BirthDate uses the DATE data type to store a date (year, month, day).
+
+EventTime uses the TIME data type to store a time (hours, minutes, seconds).
+
+DateTimeInfo uses the DATETIME data type to store both date and time.
+
+TimeStampInfo uses the TIMESTAMP data type to store date and time with time zone info.
+
+YearOnly uses the YEAR data type to store a year.
+
+IsActive uses the BOOLEAN data type to store TRUE or FALSE values.
+
+Size uses the ENUM data type to store one value from a predefined list ('small', 'medium', 'large').
+
+LocationPoint uses the POINT data type to store a geographic point in 2D space.
+
+Route uses the LINESTRING data type to store a line made up of multiple points.
+
+Area uses the POLYGON data type to store a shape defined by multiple points.
+
+JsonData uses the JSON data type to store JSON formatted data.
+
 
 
