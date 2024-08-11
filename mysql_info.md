@@ -268,6 +268,7 @@ VALUES ('John', 'Doe', 1, 50000);
 
 COMMIT;
 ```
+
 In this example, the INSERT operation is part of a transaction, and the COMMIT command saves the changes permanently.
 
 o ROLLBACK:
@@ -301,6 +302,7 @@ ROLLBACK TO savepoint1;
 
 COMMIT;
 ```
+
 Here, after the second INSERT, the transaction is rolled back to savepoint1, so the second insert is undone, but the first insert remains.
 
 o SET TRANSACTION:
@@ -330,6 +332,7 @@ FROM Employees
 WHERE DepartmentID = 1
 ORDER BY Salary DESC;
 ```
+
 This query selects the FirstName, LastName, and Salary columns from the Employees table where the DepartmentID is 1, and sorts the results by Salary in descending order.
 
 ## Implementation
