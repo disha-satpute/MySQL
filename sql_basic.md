@@ -516,27 +516,42 @@ VARBINARY(n) : Variable-length binary data.
 
 BLOB : Binary Large Object, used to store large binary data such as images or files.
 
-4. Date and Time Data Types
-DATE: Stores a date (year, month, day) (e.g., '2024-08-10').
-TIME: Stores a time (hours, minutes, seconds) (e.g., '12:30:45').
-DATETIME: Stores both date and time (e.g., '2024-08-10 12:30:45').
-TIMESTAMP: Similar to DATETIME, often includes time zone information.
-YEAR: Stores a year value (e.g., 2024).
+**4. Date and Time Data Types -**
 
-5. Boolean Data Type
-BOOLEAN: Stores TRUE or FALSE values.
-6. Enumerated Data Type
-ENUM: Stores one value from a list of predefined values (e.g., ENUM('small', 'medium', 'large')).
-7. Spatial Data Types
-GEOMETRY: Stores geometric data (points, lines, polygons).
-POINT: Stores a single point in 2D space.
-LINESTRING: Stores a sequence of points forming a line.
-POLYGON: Stores a shape defined by multiple points.
-8. JSON Data Type
-JSON: Stores JSON (JavaScript Object Notation) formatted data.
+DATE : Stores a date (year, month, day) (e.g., '2024-08-10').
+
+TIME : Stores a time (hours, minutes, seconds) (e.g., '12:30:45').
+
+DATETIME : Stores both date and time (e.g., '2024-08-10 12:30:45').
+
+TIMESTAMP : Similar to DATETIME, often includes time zone information.
+
+YEAR : Stores a year value (e.g., 2024).
+
+**5. Boolean Data Type -**
+
+BOOLEAN : Stores TRUE or FALSE values.
+
+**6. Enumerated Data Type -**
+
+ENUM : Stores one value from a list of predefined values (e.g., ENUM('small', 'medium', 'large')).
+
+**7. Spatial Data Types -**
+
+GEOMETRY : Stores geometric data (points, lines, polygons).
+
+POINT : Stores a single point in 2D space.
+
+LINESTRING : Stores a sequence of points forming a line.
+
+POLYGON : Stores a shape defined by multiple points.
+
+**8. JSON Data Type -**
+
+JSON : Stores JSON (JavaScript Object Notation) formatted data.
+
 Example of Defining Data Types in a Table
-sql
-Copy code
+``sql
 CREATE TABLE Employees (
     EmployeeID INT PRIMARY KEY,
     FirstName VARCHAR(50),
@@ -546,13 +561,20 @@ CREATE TABLE Employees (
     IsActive BOOLEAN,
     ProfilePicture BLOB
 );
+```
+
 In this example:
 
 EmployeeID is an integer.
+
 FirstName and LastName are variable-length strings.
+
 BirthDate stores the date of birth.
+
 Salary is a fixed-point number with two decimal places.
+
 IsActive stores a boolean value.
+
 ProfilePicture stores binary data, such as an image.
 
 
