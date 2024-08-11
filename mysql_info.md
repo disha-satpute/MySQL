@@ -252,10 +252,10 @@ Transaction Control Language (TCL)
 TCL commands are used to manage transactions in a database. A transaction is a sequence of one or more SQL statements that are executed as a single unit of work.<br> TCL commands help in controlling the execution of these transactions, ensuring the integrity and consistency of the database.
 
 Common TCL Commands:
-COMMIT
-ROLLBACK
-SAVEPOINT
-SET TRANSACTION
+COMMIT<br>
+ROLLBACK<br>
+SAVEPOINT<br>
+SET TRANSACTION<br>
 
 o COMMIT:
 
