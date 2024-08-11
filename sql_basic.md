@@ -550,7 +550,8 @@ POLYGON : Stores a shape defined by multiple points.
 
 JSON : Stores JSON (JavaScript Object Notation) formatted data.
 
-Example of Defining Data Types in a Table
+Example of Defining Data Types in a Table -
+
 ``sql
 CREATE TABLE Employees (
     EmployeeID INT PRIMARY KEY,
