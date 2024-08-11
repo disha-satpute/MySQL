@@ -319,6 +319,7 @@ COMMIT;
 ```
 This sets the isolation level of the transaction, which controls how changes made in the transaction are visible to other transactions.
 __________________________________________________________________________________________________________________________________________________
+
 ## DQL
 
 DQL is primarily concerned with the retrieval of data from the database. It consists of the SELECT statement, which is used to query the database and fetch the desired data.
@@ -355,7 +356,7 @@ CHECK <br>
 DEFAULT <br>
 
 1. NOT NULL -
-   
+
 The NOT NULL constraint ensures that a column cannot have a NULL value. It forces the field to always contain a value.
 ```sql
 CREATE TABLE Employees (
@@ -396,7 +397,7 @@ The EmployeeID is a unique identifier for each employee.
 <hr/>
 
 4. FOREIGN KEY -
-   
+
 The FOREIGN KEY constraint is used to link two tables. It is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table.
 ```sql
 CREATE TABLE Departments (
@@ -416,7 +417,7 @@ Here, DepartmentID in the Employees table is a foreign key referencing Departmen
 <hr/>
 
 5. CHECK -
-   
+
 The CHECK constraint ensures that all values in a column satisfy a specific condition.
 ```sql
 CREATE TABLE Employees (
