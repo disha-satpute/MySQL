@@ -595,31 +595,31 @@ CREATE TABLE DataTypeExamples (
 ```
 Breakdown of the Table :
 
-SmallNumber uses the *SMALLINT* data type to store smaller integers.
+o SmallNumber uses the *SMALLINT* data type to store smaller integers.
 
-LargeNumber uses the BIGINT data type to store larger integers.
+o o LargeNumber uses the *BIGINT* data type to store larger integers.
 
-ExactNumber uses the DECIMAL data type to store exact numerical values with two decimal places.
+ExactNumber uses the *DECIMAL* data type to store exact numerical values with two decimal places.
 
-ApproxNumber uses the FLOAT data type to store approximate numerical values.
+ApproxNumber uses the *FLOAT* data type to store approximate numerical values.
 
-FixedString uses the CHAR data type to store a fixed-length string of 10 characters.
+FixedString uses the *CHAR* data type to store a fixed-length string of 10 characters.
 
-VariableString uses the VARCHAR data type to store a variable-length string of up to 50 characters.
+VariableString uses the *VARCHAR* data type to store a variable-length string of up to 50 characters.
 
-LargeText uses the TEXT data type for large amounts of text data.
+LargeText uses the *TEXT* data type for large amounts of text data.
 
-FixedBinary uses the BINARY data type for a fixed-length binary data of 10 bytes.
+FixedBinary uses the *BINARY* data type for a fixed-length binary data of 10 bytes.
 
-VariableBinary uses the VARBINARY data type for variable-length binary data of up to 50 bytes.
+VariableBinary uses the *VARBINARY* data type for variable-length binary data of up to 50 bytes.
 
-LargeBinaryData uses the BLOB data type to store large binary data, such as files or images.
+LargeBinaryData uses the *BLOB* data type to store large binary data, such as files or images.
 
-BirthDate uses the DATE data type to store a date (year, month, day).
+BirthDate uses the *DATE* data type to store a date (year, month, day).
 
-EventTime uses the TIME data type to store a time (hours, minutes, seconds).
+EventTime uses the *TIME* data type to store a time (hours, minutes, seconds).
 
-DateTimeInfo uses the DATETIME data type to store both date and time.
+DateTimeInfo uses the *DATETIME* data type to store both date and time.
 
 TimeStampInfo uses the TIMESTAMP data type to store date and time with time zone info.
 
