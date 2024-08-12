@@ -1,11 +1,11 @@
 ## What is Database ?
 
-Database : It is organized collection of data so that it can be easily accessed.<br>
+The Meaning of Database is organized collection of data so that it can be easily accessed.<br>
 To manage this databases , **DBMS (database management system)** is used.
 
 Types of DBMS :
-1)	Relational Database
-2)	Non-Relational Database
+1)	Relational Database.
+2)	Non-Relational Database.
 
 o	Relational Database : <br>
 In this Database,data stored in table (rows & columns) format<br>
