@@ -551,7 +551,6 @@ POLYGON : Stores a shape defined by multiple points.
 JSON : Stores JSON (JavaScript Object Notation) formatted data.
 
 ---------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------
 Example of Defining Data Types in a Table -
 
 ```sql
@@ -626,19 +625,19 @@ o DateTimeInfo uses the *DATETIME* data type to store both date and time.
 
 o TimeStampInfo uses the *TIMESTAMP* data type to store date and time with time zone info.
 
-o YearOnly uses the YEAR data type to store a year.
+o YearOnly uses the *YEAR* data type to store a year.
 
-o IsActive uses the BOOLEAN data type to store TRUE or FALSE values.
+o IsActive uses the *BOOLEAN* data type to store TRUE or FALSE values.
 
-o Size uses the ENUM data type to store one value from a predefined list ('small', 'medium', 'large').
+o Size uses the *ENUM* data type to store one value from a predefined list ('small', 'medium', 'large').
 
-o LocationPoint uses the POINT data type to store a geographic point in 2D space.
+o LocationPoint uses the *POINT* data type to store a geographic point in 2D space.
 
-o Route uses the LINESTRING data type to store a line made up of multiple points.
+o Route uses the *LINESTRING* data type to store a line made up of multiple points.
 
-o Area uses the POLYGON data type to store a shape defined by multiple points.
+o Area uses the *POLYGON* data type to store a shape defined by multiple points.
 
-o JsonData uses the JSON data type to store JSON formatted data.
+o JsonData uses the *JSON* data type to store JSON formatted data.
 
 
 
