@@ -550,7 +550,10 @@ POLYGON : Stores a shape defined by multiple points.
 
 JSON : Stores JSON (JavaScript Object Notation) formatted data.
 
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
 Example of Defining Data Types in a Table -
+
 ```sql
 
 CREATE TABLE DataTypeExamples (
@@ -597,45 +600,45 @@ Breakdown of the Table :
 
 o SmallNumber uses the *SMALLINT* data type to store smaller integers.
 
-o o LargeNumber uses the *BIGINT* data type to store larger integers.
+o LargeNumber uses the *BIGINT* data type to store larger integers.
 
-ExactNumber uses the *DECIMAL* data type to store exact numerical values with two decimal places.
+o ExactNumber uses the *DECIMAL* data type to store exact numerical values with two decimal places.
 
-ApproxNumber uses the *FLOAT* data type to store approximate numerical values.
+o ApproxNumber uses the *FLOAT* data type to store approximate numerical values.
 
-FixedString uses the *CHAR* data type to store a fixed-length string of 10 characters.
+o FixedString uses the *CHAR* data type to store a fixed-length string of 10 characters.
 
-VariableString uses the *VARCHAR* data type to store a variable-length string of up to 50 characters.
+o VariableString uses the *VARCHAR* data type to store a variable-length string of up to 50 characters.
 
-LargeText uses the *TEXT* data type for large amounts of text data.
+o LargeText uses the *TEXT* data type for large amounts of text data.
 
-FixedBinary uses the *BINARY* data type for a fixed-length binary data of 10 bytes.
+o FixedBinary uses the *BINARY* data type for a fixed-length binary data of 10 bytes.
 
-VariableBinary uses the *VARBINARY* data type for variable-length binary data of up to 50 bytes.
+o VariableBinary uses the *VARBINARY* data type for variable-length binary data of up to 50 bytes.
 
-LargeBinaryData uses the *BLOB* data type to store large binary data, such as files or images.
+o LargeBinaryData uses the *BLOB* data type to store large binary data, such as files or images.
 
-BirthDate uses the *DATE* data type to store a date (year, month, day).
+o BirthDate uses the *DATE* data type to store a date (year, month, day).
 
-EventTime uses the *TIME* data type to store a time (hours, minutes, seconds).
+o EventTime uses the *TIME* data type to store a time (hours, minutes, seconds).
 
-DateTimeInfo uses the *DATETIME* data type to store both date and time.
+o DateTimeInfo uses the *DATETIME* data type to store both date and time.
 
-TimeStampInfo uses the TIMESTAMP data type to store date and time with time zone info.
+o TimeStampInfo uses the *TIMESTAMP* data type to store date and time with time zone info.
 
-YearOnly uses the YEAR data type to store a year.
+o YearOnly uses the YEAR data type to store a year.
 
-IsActive uses the BOOLEAN data type to store TRUE or FALSE values.
+o IsActive uses the BOOLEAN data type to store TRUE or FALSE values.
 
-Size uses the ENUM data type to store one value from a predefined list ('small', 'medium', 'large').
+o Size uses the ENUM data type to store one value from a predefined list ('small', 'medium', 'large').
 
-LocationPoint uses the POINT data type to store a geographic point in 2D space.
+o LocationPoint uses the POINT data type to store a geographic point in 2D space.
 
-Route uses the LINESTRING data type to store a line made up of multiple points.
+o Route uses the LINESTRING data type to store a line made up of multiple points.
 
-Area uses the POLYGON data type to store a shape defined by multiple points.
+o Area uses the POLYGON data type to store a shape defined by multiple points.
 
-JsonData uses the JSON data type to store JSON formatted data.
+o JsonData uses the JSON data type to store JSON formatted data.
 
 
 
