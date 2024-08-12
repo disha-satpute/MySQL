@@ -336,7 +336,7 @@ ORDER BY Salary DESC;
 
 This query selects the FirstName, LastName, and Salary columns from the Employees table where the DepartmentID is 1, and sorts the results by Salary in descending order.
 
-## Implementation
+## ☑️Implementation
 
 o You can Implement all commands of DDL,DML,DCL by giving reference of 'companyDB.sql' script which is available in this Repository.<br>
 
