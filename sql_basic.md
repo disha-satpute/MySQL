@@ -688,6 +688,27 @@ SELECT * FROM Employees
 WHERE HireDate <= '2020-01-01';
 ```
 o Logical Operators: AND, OR, NOT
+
+AND
+Retrieve employees who work in department 5 and have a salary greater than 50,000:
+```sql
+SELECT * FROM Employees
+WHERE DepartmentID = 5 AND Salary > 50000;
+```
+OR
+Retrieve employees who either work in department 5 or have a salary greater than 50,000:
+```sql
+SELECT * FROM Employees
+WHERE DepartmentID = 5 OR Salary > 50000;
+```
+NOT
+Retrieve employees who do not work in department 5:
+``sql
+SELECT * FROM Employees
+WHERE NOT DepartmentID = 5;
+```
+
+
 o Pattern Matching: LIKE, IN, BETWEEN
 o Null Handling: IS NULL, IS NOT NULL
 
