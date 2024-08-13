@@ -722,19 +722,19 @@ WHERE FirstName LIKE 'J%';
 ```
 % is a wildcard that matches zero or more characters.<br>
 _ is a wildcard that matches exactly one character.
-Retrieve employees whose first name has 'o' as the second letter:
+Retrieve employees whose first name has 'o' as the second letter :
 ```sql
 SELECT * FROM Employees
 WHERE FirstName LIKE '_o%';
 ```
 IN -
-Retrieve employees who work in departments 1, 3, or 5:
+Retrieve employees who work in departments 1, 3, or 5 :
 ```sql
 SELECT * FROM Employees
 WHERE DepartmentID IN (1, 3, 5);
 ```
 BETWEEN -
-Retrieve employees whose salary is between 40,000 and 60,000:
+Retrieve employees whose salary is between 40,000 and 60,000 :
 ```sql
 SELECT * FROM Employees
 WHERE Salary BETWEEN 40000 AND 60000;
@@ -743,14 +743,14 @@ WHERE Salary BETWEEN 40000 AND 60000;
 **o Null Handling: IS NULL, IS NOT NULL**
 
 IS NULL -
-Retrieve employees whose email address is not provided (NULL):
+Retrieve employees whose email address is not provided (NULL) :
 ```sql
 SELECT * FROM Employees
 WHERE Email IS NULL;
 ```
 
 IS NOT NULL -
-Retrieve employees whose email address is provided (not NULL):
+Retrieve employees whose email address is provided (not NULL) :
 ```sql
 SELECT * FROM Employees
 WHERE Email IS NOT NULL;
