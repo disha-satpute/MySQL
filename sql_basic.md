@@ -652,64 +652,68 @@ WHERE DepartmentID = 3;
 In this example, the query retrieves all columns from the Employees table where the DepartmentID is 3.
 
 Operators Used in WHERE :
+
 o Comparison Operators: =, <> (not equal), >, <, >=, <=
+
 ```sql
 SELECT * FROM Employees
 WHERE DepartmentID = 5;
 ```
- <> or != (Not equal to)
-Retrieve employees who are not in a specific department:
+ <> or != (Not equal to) -
+Retrieve employees who are not in a specific department :
 ```sql
 SELECT * FROM Employees
 WHERE DepartmentID <> 5;
 ```
- > (Greater than)
-Retrieve employees with a salary greater than 50,000:
+ > (Greater than) -
+Retrieve employees with a salary greater than 50,000 :
 ```sql
 SELECT * FROM Employees
 WHERE Salary > 50000;
 ```
- < (Less than)
-Retrieve employees who were hired before the year 2020:
+ < (Less than) -
+Retrieve employees who were hired before the year 2020 :
 ```sql
 SELECT * FROM Employees
 WHERE HireDate < '2020-01-01';
 ```
- >= (Greater than or equal to)
-Retrieve employees with a salary of at least 50,000:
+ >= (Greater than or equal to) -
+Retrieve employees with a salary of at least 50,000 :
 ```sql
 SELECT * FROM Employees
 WHERE Salary >= 50000;
 ```
- <= (Less than or equal to)
-Retrieve employees hired on or before January 1, 2020:
+ <= (Less than or equal to) -
+Retrieve employees hired on or before January 1, 2020 :
 ```sql
 SELECT * FROM Employees
 WHERE HireDate <= '2020-01-01';
 ```
+
+
 o Logical Operators: AND, OR, NOT
 
-AND
-Retrieve employees who work in department 5 and have a salary greater than 50,000:
+AND -
+Retrieve employees who work in department 5 and have a salary greater than 50,000 :
 ```sql
 SELECT * FROM Employees
 WHERE DepartmentID = 5 AND Salary > 50000;
 ```
-OR
-Retrieve employees who either work in department 5 or have a salary greater than 50,000:
+OR -
+Retrieve employees who either work in department 5 or have a salary greater than 50,000 :
 ```sql
 SELECT * FROM Employees
 WHERE DepartmentID = 5 OR Salary > 50000;
 ```
-NOT
-Retrieve employees who do not work in department 5:
+NOT -
+Retrieve employees who do not work in department 5 :
 ``sql
 SELECT * FROM Employees
 WHERE NOT DepartmentID = 5;
 ```
 
-
 o Pattern Matching: LIKE, IN, BETWEEN
+
 o Null Handling: IS NULL, IS NOT NULL
 
 
