@@ -653,7 +653,7 @@ In this example, the query retrieves all columns from the Employees table where 
 
 Operators Used in WHERE :
 
-o Comparison Operators: =, <> (not equal), >, <, >=, <=
+**o Comparison Operators: =, <> (not equal), >, <, >=, <=**
 
 ```sql
 SELECT * FROM Employees
@@ -690,8 +690,7 @@ SELECT * FROM Employees
 WHERE HireDate <= '2020-01-01';
 ```
 
-
-o Logical Operators: AND, OR, NOT
+**o Logical Operators: AND, OR, NOT**
 
 AND -
 Retrieve employees who work in department 5 and have a salary greater than 50,000 :
@@ -712,7 +711,9 @@ SELECT * FROM Employees
 WHERE NOT DepartmentID = 5;
 ```
 
+
 o Pattern Matching: LIKE, IN, BETWEEN
+
 
 o Null Handling: IS NULL, IS NOT NULL
 
