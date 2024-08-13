@@ -655,7 +655,7 @@ o Comparison Operators: =, <> (not equal), >, <, >=, <=
 ```sql
 SELECT * FROM Employees
 WHERE DepartmentID = 5;
-``
+```
 <> or != (Not equal to)
 Retrieve employees who are not in a specific department:
 ```sql
@@ -685,7 +685,7 @@ Retrieve employees hired on or before January 1, 2020:
 ```sql
 SELECT * FROM Employees
 WHERE HireDate <= '2020-01-01';
-
+```
 o Logical Operators: AND, OR, NOT
 o Pattern Matching: LIKE, IN, BETWEEN
 o Null Handling: IS NULL, IS NOT NULL
