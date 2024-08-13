@@ -642,7 +642,8 @@ o JsonData uses the *JSON* data type to store JSON formatted data.
 ## SQL Clauses 
 SQL clauses are essential components of SQL queries, allowing you to filter, sort, group, and limit the results returned by a query. Below is a deep dive into the most commonly used SQL clauses, how they work, and how they can be combined to perform complex data retrieval tasks.
 
-**1. WHERE Clause**
+**1. WHERE Clause** -
+
 The WHERE clause is used to filter records that meet specific criteria. It is typically used with SELECT, UPDATE, and DELETE statements to restrict the rows affected by these operations.
 ```sql
 SELECT * FROM Employees
