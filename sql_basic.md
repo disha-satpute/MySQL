@@ -659,31 +659,31 @@ Operators Used in WHERE :
 SELECT * FROM Employees
 WHERE DepartmentID = 5;
 ```
- <> or != (Not equal to) -
+(Not equal to) <> or != -
 Retrieve employees who are not in a specific department :
 ```sql
 SELECT * FROM Employees
 WHERE DepartmentID <> 5;
 ```
- > (Greater than) -
+(Greater than)> -
 Retrieve employees with a salary greater than 50,000 :
 ```sql
 SELECT * FROM Employees
 WHERE Salary > 50000;
 ```
- < (Less than) -
+(Less than) <  -
 Retrieve employees who were hired before the year 2020 :
 ```sql
 SELECT * FROM Employees
 WHERE HireDate < '2020-01-01';
 ```
- >= (Greater than or equal to) -
+(Greater than or equal to) >=  -
 Retrieve employees with a salary of at least 50,000 :
 ```sql
 SELECT * FROM Employees
 WHERE Salary >= 50000;
 ```
- <= (Less than or equal to) -
+(Less than or equal to) <= -
 Retrieve employees hired on or before January 1, 2020 :
 ```sql
 SELECT * FROM Employees
