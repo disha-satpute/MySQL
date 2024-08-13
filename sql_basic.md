@@ -639,5 +639,60 @@ o Area uses the *POLYGON* data type to store a shape defined by multiple points.
 
 o JsonData uses the *JSON* data type to store JSON formatted data.
 
+## SQL Clauses 
+SQL clauses are essential components of SQL queries, allowing you to filter, sort, group, and limit the results returned by a query. Below is a deep dive into the most commonly used SQL clauses, how they work, and how they can be combined to perform complex data retrieval tasks.
+
+**1. WHERE Clause**
+The WHERE clause is used to filter records that meet specific criteria. It is typically used with SELECT, UPDATE, and DELETE statements to restrict the rows affected by these operations.
+```sql
+SELECT * FROM Employees
+WHERE DepartmentID = 3;
+```
+In this example, the query retrieves all columns from the Employees table where the DepartmentID is 3.
+
+Operators Used in WHERE :
+o Comparison Operators: =, <> (not equal), >, <, >=, <=
+```sql
+SELECT * FROM Employees
+WHERE DepartmentID = 5;
+``
+<> or != (Not equal to)
+Retrieve employees who are not in a specific department:
+```sql
+SELECT * FROM Employees
+WHERE DepartmentID <> 5;
+```
+> (Greater than)
+Retrieve employees with a salary greater than 50,000:
+```sql
+SELECT * FROM Employees
+WHERE Salary > 50000;
+```
+< (Less than)
+Retrieve employees who were hired before the year 2020:
+```sql
+SELECT * FROM Employees
+WHERE HireDate < '2020-01-01';
+```
+>= (Greater than or equal to)
+Retrieve employees with a salary of at least 50,000:
+```sql
+SELECT * FROM Employees
+WHERE Salary >= 50000;
+```
+<= (Less than or equal to)
+Retrieve employees hired on or before January 1, 2020:
+```sql
+SELECT * FROM Employees
+WHERE HireDate <= '2020-01-01';
+
+o Logical Operators: AND, OR, NOT
+o Pattern Matching: LIKE, IN, BETWEEN
+o Null Handling: IS NULL, IS NOT NULL
+
+
+
+
+
 
 
