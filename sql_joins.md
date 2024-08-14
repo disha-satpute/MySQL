@@ -35,14 +35,18 @@ EmployeeID	FirstName	LastName	DepartmentID
 2	           Jane	      Smith	        2
 3	           Jim	      Beam	        3
 
+```sql
++-------------+----------------+----------+----------------+
+| EmployeeID  |  FirstName    | LastName  |	DepartmentID   |
++-------------+-----------------+---------------------------+
+|      1      |   John	      |   Doe	  |       1        |
+|      2      |   Jane	      |  Smith	  |       2        |
+|      3      |    Jim        |   Beam	  |       3        |
++-------------+---------------+-----------+----------------+
+```
+
 Departments:
 
-DepartmentID	DepartmentName
-1	                 HR
-2	               Finance
-3	                 IT
-
-Result:
 ```sql
 +----------------+----------------+
 |   DepartmentID | DepartmentName |
@@ -52,6 +56,8 @@ Result:
 |  3             |     IT         |
 +---------------------------------+
 ```
+
+Result:
 
 Query to get employee names along with their department names:
 
