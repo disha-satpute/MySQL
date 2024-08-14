@@ -31,18 +31,13 @@ Suppose we have two tables:
 
 Employees:
 
-EmployeeID	FirstName	LastName	DepartmentID
-1	           John       Doe	        1
-2	           Jane	      Smith	        2
-3	           Jim	      Beam	        3
-
 ```sql
 +-------------+----------------+----------+----------------+
 | EmployeeID  |  FirstName   |  LastName  |	DepartmentID   |
 +-------------+-----------------+---------------------------+
-|      1      |   John	      |   Doe	     |       1        |
-|      2      |   Jane	      |  Smith	    |       2        |
-|      3      |    Jim       |   Beam	    |       3        |
+|      1      |   John	     |   Doe	  |       1        |
+|      2      |   Jane	     |  Smith	  |       2        |
+|      3      |    Jim       |   Beam	  |       3        |
 +-------------+---------------+-----------+----------------+
 ```
 
@@ -52,8 +47,8 @@ Departments:
 +----------------+----------------+
 |   DepartmentID | DepartmentName |
 +----------------+----------------+
-|  1	            |     HR	        |
-|  2	            |  Finance       |
+|  1	         |     HR	      |
+|  2	         |  Finance       |
 |  3             |     IT         |
 +---------------------------------+
 ```
@@ -74,9 +69,9 @@ Result:
 +----------- -+----------+------------------+
 | FirstName   | LastName  |	DepartmentName  |
 +---------+----------+----------------------+
-|   John	     |   Doe	    |       HR        |
-|   Jane	     |  Smith	   |     Finance     |
-|   Jim       |   Beam	   |       IT        |
+|   John	  |   Doe     |       HR        |
+|   Jane	  |  Smith	  |     Finance     |
+|   Jim       |   Beam	  |       IT        |
 +-------------------------------------------+
 ```
 
