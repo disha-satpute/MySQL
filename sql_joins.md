@@ -34,9 +34,9 @@ Employees:
 
 | EmployeeID  |  FirstName   |  LastName  |	DepartmentID   |
 | ----------- | ------------ | ---------- | -------------- |
-|      1      |   John	     |   Doe	  |       1        |
-|      2      |   Jane	     |  Smith	  |       2        |
-|      3      |    Jim       |   Beam	  |       3        |
+|      1      |   Sanika	 |   Bhor	  |       1        |
+|      2      |   Disha	     |  Satpute   |       2        |
+|      3      |  Darshan     |   Shinde	  |       3        |
 
 
 Departments:
