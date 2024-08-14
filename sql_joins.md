@@ -65,15 +65,12 @@ ON Employees.DepartmentID = Departments.DepartmentID;
 ```
 
 Result:
-```sql
-+----------- -+----------+------------------+
-| FirstName   | LastName  |	DepartmentName  |
-+---------+----------+----------------------+
-|   John	  |   Doe     |       HR        |
-|   Jane	  |  Smith	  |     Finance     |
-|   Jim       |   Beam	  |       IT        |
-+-------------------------------------------+
-```
+
+| FirstName      | LastName | DepartmentName |
+| -------------- | -------- | -------------- |
+| Sanika         | Bhor     |   HR           |
+| Disha          | Satpute  |  Finance       |
+| Darshan        | Shinde   | IT             |
 
 Explanation :
 
