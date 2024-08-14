@@ -42,6 +42,17 @@ DepartmentID	DepartmentName
 2	               Finance
 3	                 IT
 
+Result:
+```sql
++----------------+----------------+
+|   DepartmentID | DepartmentName |
++----------------+----------------+
+|  1	         |     HR	      |
+|  2	         |  Finance       |
+|  3             |     IT         |
++---------------------------------+
+```
+
 Query to get employee names along with their department names:
 
 ```sql
@@ -52,11 +63,15 @@ ON Employees.DepartmentID = Departments.DepartmentID;
 ```
 
 Result:
+```sql
++----------- -+----------+------------------+
+|   FirstName | LastName  |	DepartmentName  |
++---------+----------+----------------------+
+|   John	  |   Doe	  |       HR        |
+|   Jane	  |  Smith	  |     Finance     |
+|   Jim       |   Beam	  |       IT        |
++-------------------------------------------+
+```
 
-FirstName	LastName	DepartmentName
-John	      Doe	         HR
-Jane	     Smith	       Finance
-Jim           Beam	         IT
-
-Explanation :0
+Explanation :
  The INNER JOIN returns only the rows where there is a match between Employees.DepartmentID and Departments.DepartmentID.
