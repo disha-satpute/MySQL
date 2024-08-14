@@ -49,8 +49,6 @@ Departments:
 |  3             |     IT         |
 
 
-Result:
-
 Query to get employee names along with their department names:
 
 ```sql
