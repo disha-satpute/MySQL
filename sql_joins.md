@@ -3,12 +3,12 @@ SQL Joins are used to combine rows from two or more tables based on a related co
 
 Types of SQL Joins :
 
-INNER JOIN
-LEFT (OUTER) JOIN
-RIGHT (OUTER) JOIN
-FULL (OUTER) JOIN
-CROSS JOIN
-SELF JOIN
+INNER JOIN <br>
+LEFT (OUTER) JOIN <br>
+RIGHT (OUTER) JOIN <br>
+FULL (OUTER) JOIN <br>
+CROSS JOIN <br>
+SELF JOIN <br>
 
 Let’s explore each of these joins in detail with examples.
 
