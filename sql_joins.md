@@ -12,7 +12,7 @@ SELF JOIN <br>
 
 Let’s explore each of these joins in detail with examples.
 
-**1. INNER JOIN -**
+## 1. INNER JOIN -
 The INNER JOIN keyword selects records that have matching values in both tables. It returns only the rows where there is a match on the join condition.
 
 Syntax:
@@ -65,13 +65,12 @@ Result:
 | Disha          | Satpute  |  Finance       |
 | Darshan        | Shinde   | IT             |
 
-Explanation :
+Explanation :<br>
+The INNER JOIN returns only the rows where there is a match between Employees.DepartmentID and Departments.DepartmentID.
 
- The INNER JOIN returns only the rows where there is a match between Employees.DepartmentID and Departments.DepartmentID.
 
--------------------------------------------------------------------------------------------------------------------------------
 
- **2. LEFT (OUTER) JOIN -**<br>
+## 2. LEFT (OUTER) JOIN -
 The LEFT JOIN (or LEFT OUTER JOIN) returns all rows from the left table (table1), along with matching rows from the right table (table2). If there is no match, the result is NULL for columns from the right table.
 
 Syntax:
@@ -108,11 +107,11 @@ Result:
 | Darshan        | Shinde   |    IT          |
 |  Sara          | Muluk    | NULL           |
 
-Explanation: The LEFT JOIN returns all rows from the Employees table, including Sara, even though she has no department. The DepartmentName column for her is NULL.
+Explanation:<br> The LEFT JOIN returns all rows from the Employees table, including Sara, even though she has no department. The DepartmentName column for her is NULL.
 
------------------------------------------------------------------------------------------------------------------------------------------------
 
-**3. RIGHT (OUTER) JOIN -**<br>
+
+## 3. RIGHT (OUTER) JOIN -
 The RIGHT JOIN (or RIGHT OUTER JOIN) is similar to the LEFT JOIN, but it returns all rows from the right table (table2), along with matching rows from the left table (table1). If there is no match, the result is NULL for columns from the left table.
 
 Syntax:
@@ -150,11 +149,11 @@ Result:
 | Darshan        | Shinde   |    IT          |
 |  NULL          | NULL     | Legal          |
 
-Explanation: The RIGHT JOIN returns all rows from the Departments table, including the new "Legal" department, even though there are no employees in it. The FirstName and LastName columns for that department are NULL.
+Explanation: <br>The RIGHT JOIN returns all rows from the Departments table, including the new "Legal" department, even though there are no employees in it. The FirstName and LastName columns for that department are NULL.
 
------------------------------------------------------------------------------------------------------------------------------------------------
 
-**4. FULL (OUTER) JOIN -** <br>
+
+## 4. FULL (OUTER) JOIN - 
 The FULL JOIN (or FULL OUTER JOIN) returns all rows when there is a match in either left (table1) or right (table2) table. If there is no match, the result is NULL on the side where there is no match.
 
 Syntax:
@@ -187,4 +186,39 @@ Result:
 |  Sara          | Muluk    |    NULL        |
 |  NULL          | NULL     |   Legal        |
 
-Explanation: The FULL JOIN returns all rows from both the Employees and Departments tables. Sarah is included even though she doesn't belong to a department, and the Legal department is included even though it has no employees.
+Explanation:<br> The FULL JOIN returns all rows from both the Employees and Departments tables. Sarah is included even though she doesn't belong to a department, and the Legal department is included even though it has no employees.
+
+## 5. CROSS JOIN -
+The CROSS JOIN returns the Cartesian product of two tables, meaning it combines each row from the first table with every row from the second table. This results in all possible combinations of rows between the two tables.
+
+Syntax:
+
+```sql
+SELECT columns
+FROM table1
+CROSS JOIN table2;
+```
+
+Example:
+
+Query to combine all employees with all departments:
+```sql
+SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
+FROM Employees
+CROSS JOIN Departments;
+```
+Result:
+
+```sql
+| FirstName      | LastName | DepartmentName |
+| -------------- | -------- | -------------- |
+| Sanika         | Bhor     |   HR           |
+| Sanika         | Bhor     |  Finance       |
+| Sanika         | Bhor     |    IT          |
+| Sanika         | Bhor     |    Legal       |
+|  Disha         | Satpute  |   HR           |
+|  Disha         |Satpute   |finance         |
+...	...	...
+```
+
+Explanation: <br>The CROSS JOIN returns every possible combination of Employees and Departments. For example, Sanika is paired with every department, Disha is paired with every department, and so on.
