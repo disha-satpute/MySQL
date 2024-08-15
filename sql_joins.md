@@ -109,3 +109,42 @@ Result:
 
 Explanation: The LEFT JOIN returns all rows from the Employees table, including Sara, even though she has no department. The DepartmentName column for her is NULL.
 
+**3. RIGHT (OUTER) JOIN -**
+The RIGHT JOIN (or RIGHT OUTER JOIN) is similar to the LEFT JOIN, but it returns all rows from the right table (table2), along with matching rows from the left table (table1). If there is no match, the result is NULL for columns from the left table.
+
+Syntax:
+
+```sql
+SELECT columns
+FROM table1
+RIGHT JOIN table2
+ON table1.column = table2.column;
+```
+
+Example:
+
+Suppose we add a new department to the Departments table that has no employees:
+
+|DepartmentID|	DepartmentName |
+|------------|-----------------|
+|4	         |Legal            |
+
+Query to get all departments and their employees:
+
+```sql
+SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
+FROM Employees
+RIGHT JOIN Departments
+ON Employees.DepartmentID = Departments.DepartmentID;
+```
+
+Result:
+
+| FirstName      | LastName | DepartmentName |
+| -------------- | -------- | -------------- |
+| Sanika         | Bhor     |   HR           |
+| Disha          | Satpute  |  Finance       |
+| Darshan        | Shinde   |    IT          |
+|  NULL          | NULL     | Legal          |
+
+Explanation: The RIGHT JOIN returns all rows from the Departments table, including the new "Legal" department, even though there are no employees in it. The FirstName and LastName columns for that department are NULL.
