@@ -48,8 +48,6 @@ Departments:
 |  3             |     IT         |
 
 
-Result:
-
 Query to get employee names along with their department names:
 
 ```sql
@@ -70,6 +68,7 @@ Result:
 Explanation :
 
  The INNER JOIN returns only the rows where there is a match between Employees.DepartmentID and Departments.DepartmentID.
+<<<<<<< HEAD
 
  **2. LEFT (OUTER) JOIN -**
 The LEFT JOIN (or LEFT OUTER JOIN) returns all rows from the left table (table1), along with matching rows from the right table (table2). If there is no match, the result is NULL for columns from the right table.
@@ -109,3 +108,4 @@ Result:
 |  Sara          | Muluk    | NULL           |
 
 Explanation: The LEFT JOIN returns all rows from the Employees table, including Sara, even though she has no department. The DepartmentName column for her is NULL.
+
