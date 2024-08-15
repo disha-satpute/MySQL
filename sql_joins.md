@@ -209,7 +209,6 @@ CROSS JOIN Departments;
 ```
 Result:
 
-```sql
 | FirstName      | LastName | DepartmentName |
 | -------------- | -------- | -------------- |
 | Sanika         | Bhor     |   HR           |
@@ -219,7 +218,7 @@ Result:
 |  Disha         | Satpute  |   HR           |
 |  Disha         |Satpute   |finance         |
 ...	...	...
-```
+
 
 Explanation: <br>The CROSS JOIN returns every possible combination of Employees and Departments. For example, Sanika is paired with every department, Disha is paired with every department, and so on.
 
