@@ -261,7 +261,8 @@ Result:
 
 Explanation: <br>The SELF JOIN joins the Employees table with itself, allowing us to match employees with their managers.
 
---------------+---------------------------+-------------------------+------------------------+
+***************************************************************************************************************************************<br>
+
 Summary :<br>
 
 INNER JOIN: Returns only the rows with matching data in both tables.<br>
