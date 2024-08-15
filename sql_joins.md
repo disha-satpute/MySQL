@@ -218,7 +218,46 @@ Result:
 | Sanika         | Bhor     |    Legal       |
 |  Disha         | Satpute  |   HR           |
 |  Disha         |Satpute   |finance         |
-...	               ...       	...
+...	...	...
 ```
 
 Explanation: <br>The CROSS JOIN returns every possible combination of Employees and Departments. For example, Sanika is paired with every department, Disha is paired with every department, and so on.
+
+## 6. SELF JOIN -
+A SELF JOIN is a join where a table is joined with itself. This can be useful in scenarios where you need to compare rows within the same table.
+
+Syntax:
+
+```sql
+SELECT columns
+FROM table1 alias1
+INNER JOIN table1 alias2
+ON alias1.column = alias2.column;
+```
+
+Example:
+
+Suppose we have an Employees table with a ManagerID column that references the EmployeeID of the employee's manager.
+
+| EmployeeID  |  FirstName   |  LastName  |	DepartmentID   |
+| ----------- | ------------ | ---------- | -------------- |
+|      1      |   Sanika	 |   Bhor	  |     NULL       |
+|      2      |   Disha	     |  Satpute   |       1        |
+|      3      |  Darshan     |   Shinde	  |       1        |
+|      4      |   Sara       |   Muluk    |       2        |
+
+Query to get a list of employees along with their managers:
+```sql
+SELECT e1.FirstName AS Employee, e2.FirstName AS Manager
+FROM Employees e1
+INNER JOIN Employees e2
+ON e1.ManagerID = e2.EmployeeID;
+```
+Result:
+|Employee |	Manager  |
+|---------|----------|
+|Disha	  |Sanika    |
+|Darshan  |Sanika    |
+|Sarah    |Disha     |
+
+Explanation: <br>The SELF JOIN joins the Employees table with itself, allowing us to match employees with their managers.
