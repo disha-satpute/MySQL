@@ -263,7 +263,7 @@ Explanation: <br>The SELF JOIN joins the Employees table with itself, allowing u
 
 ***************************************************************************************************************************************<br>
 
-Summary :<br>
+**Summary:**<br>
 
 INNER JOIN: Returns only the rows with matching data in both tables.<br>
 
