@@ -1,4 +1,4 @@
-## SQL Joins
+# SQL Joins
 SQL Joins are used to combine rows from two or more tables based on a related column between them.<br> There are several types of joins that allow you to retrieve data from multiple tables, depending on the relationship between the tables and the desired result set.
 
 Types of SQL Joins :
@@ -260,3 +260,29 @@ Result:
 |Sarah    |Disha     |
 
 Explanation: <br>The SELF JOIN joins the Employees table with itself, allowing us to match employees with their managers.
+
+--------------+---------------------------+-------------------------+------------------------+
+Summary :<br>
+
+INNER JOIN: Returns only the rows with matching data in both tables.<br>
+
+LEFT JOIN: Returns all rows from the left table and matched rows from the right table; unmatched rows from the right table will have NULL.<br>
+
+RIGHT JOIN: Returns all rows from the right table and matched rows from the left table; unmatched rows from the left table will have NULL.<br>
+
+FULL JOIN: Returns all rows when there is a match in either table; unmatched rows will have NULL.<br>
+
+CROSS JOIN: Returns the Cartesian product of the two tables, i.e., all possible combinations of rows.<br>
+
+SELF JOIN: Joins a table to itself to compare rows within the same table.<br>
+
+
+These different types of joins allow you to perform complex queries across multiple tables and retrieve data based on relationships and conditions.
+
+
+
+
+
+
+
+
