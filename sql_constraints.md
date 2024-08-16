@@ -10,6 +10,7 @@ PRIMARY KEY <br>
 FOREIGN KEY <br>
 CHECK <br>
 DEFAULT <br>
+AUTO_INCREMENT<BR>
 
 1. NOT NULL -
 
@@ -101,6 +102,9 @@ CREATE TABLE Employees (
 );
 ```
 Here, StartDate will default to the current date if no date is provided.
+
+7. AUTO_INCREMENT -
+
 <hr/>
 
 ### Using Constraints in Table Creation :
