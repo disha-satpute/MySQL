@@ -103,6 +103,8 @@ CREATE TABLE Employees (
 ```
 Here, StartDate will default to the current date if no date is provided.
 
+<hr/>
+
 **7. AUTO_INCREMENT -**
 
 - The AUTO_INCREMENT constraint is usually applied to an integer column.<br>
@@ -125,7 +127,7 @@ CREATE TABLE Employees (
 ```
 In this example:
 
-o The EmployeeID column is of type INT and has the AUTO_INCREMENT constraint.
+o The EmployeeID column is of type INT and has the AUTO_INCREMENT constraint.<br>
 o The PRIMARY KEY constraint is applied to the EmployeeID column, ensuring that it will uniquely identify each row.
 
 *Inserting Data :*
