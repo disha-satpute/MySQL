@@ -34,7 +34,7 @@ e.g. MongoDB,Redis,Firebase Realtime Database<br>
 ```
 <hr/>
 
-## Structure Query Language (SQL)
+ # <p align="center"> Structured Query Language (SQL)</p>
 
 It’s a standardized language used for managing and manipulating relational databases. SQL allows users to perform a variety of tasks, such as querying data, updating records, deleting data, and creating or modifying database structures.<br>
 
