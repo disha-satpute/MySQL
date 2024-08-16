@@ -344,9 +344,7 @@ o You can also <a href="https://github.com/disha-satpute/MySQL/blob/main/company
 
 __________________________________________________________________________________________________________________________________________________
 
-
-
-## SQL Clauses 
+## SQL Clauses
 SQL clauses are essential components of SQL queries, allowing you to filter, sort, group, and limit the results returned by a query. Below is a deep dive into the most commonly used SQL clauses, how they work, and how they can be combined to perform complex data retrieval tasks.
 
 **1. WHERE Clause** -
@@ -367,31 +365,49 @@ SELECT * FROM Employees
 WHERE DepartmentID = 5;
 ```
 (Not equal to) <> or != -
+
 Retrieve employees who are not in a specific department :
+
 ```sql
 SELECT * FROM Employees
 WHERE DepartmentID <> 5;
 ```
+
+
 (Greater than)> -
+
 Retrieve employees with a salary greater than 50,000 :
+
 ```sql
 SELECT * FROM Employees
 WHERE Salary > 50000;
 ```
+
+
 (Less than) <  -
+
 Retrieve employees who were hired before the year 2020 :
+
 ```sql
 SELECT * FROM Employees
 WHERE HireDate < '2020-01-01';
 ```
+
+
 (Greater than or equal to) >=  -
+
 Retrieve employees with a salary of at least 50,000 :
+
 ```sql
 SELECT * FROM Employees
 WHERE Salary >= 50000;
 ```
+
+
 (Less than or equal to) <= -
+
 Retrieve employees hired on or before January 1, 2020 :
+
 ```sql
 SELECT * FROM Employees
 WHERE HireDate <= '2020-01-01';
