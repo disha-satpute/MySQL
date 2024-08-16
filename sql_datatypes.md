@@ -1,4 +1,4 @@
-## SQL Datatypes
+# SQL Datatypes
 
 SQL data types define the kind of data that can be stored in a table's columns. Choosing the appropriate data type is crucial for data integrity, performance, and storage optimization.
 

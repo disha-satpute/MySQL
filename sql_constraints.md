@@ -158,9 +158,9 @@ Result:
 
 In this example:
 
-EmployeeID = 1 was assigned to John Doe.
-EmployeeID = 2 was assigned to Jane Smith.
-EmployeeID = 3 was assigned to Jim Beam.
+EmployeeID = 1 was assigned to John Doe. <br>
+EmployeeID = 2 was assigned to Jane Smith.<br>
+EmployeeID = 3 was assigned to Jim Beam.<br>
 
 <hr/>
 
