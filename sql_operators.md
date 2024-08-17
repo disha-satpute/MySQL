@@ -131,6 +131,7 @@ SELECT * FROM Employees WHERE NOT DepartmentID = 3;
 ```
 
 **4. Bitwise Operators -**
+
 These operators perform bit-level operations on integer values.
 
 '&' (Bitwise AND): Compares each bit of two numbers. The result is 1 if both bits are 1, otherwise 0.
