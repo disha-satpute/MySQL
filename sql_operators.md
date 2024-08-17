@@ -215,41 +215,42 @@ These operators are used to perform operations on string data.
 SELECT FirstName || ' ' || LastName AS FullName FROM Employees;
 -- Returns the full name of employees by concatenating the first and last names (Oracle/PostgreSQL syntax)
 ```
-sql
-Copy code
+```sql
 SELECT FirstName + ' ' + LastName AS FullName FROM Employees;
 -- Returns the full name of employees by concatenating the first and last names (SQL Server syntax)
-LIKE: Searches for a specified pattern in a column, using wildcards.
+```
 
-sql
-Copy code
+LIKE: Searches for a specified pattern in a column, using wildcards.
+```sql
 SELECT * FROM Employees WHERE LastName LIKE '_oe';
 -- Returns employees whose last name is three characters long and ends with 'oe' (e.g., "Doe")
-7. Other Operators
+```
+
+**7. Other Operators -**
 These operators are used in specific contexts, often involving subqueries.
 
 EXISTS: Returns TRUE if a subquery returns any rows.
-
-sql
-Copy code
+```sql
 SELECT * FROM Employees WHERE EXISTS (SELECT * FROM Departments WHERE DepartmentID = Employees.DepartmentID);
 -- Returns employees who belong to an existing department
-ANY: Compares a value to any value in a list or subquery.
+```
 
-sql
-Copy code
+ANY: Compares a value to any value in a list or subquery.
+```sql
 SELECT * FROM Employees WHERE Salary > ANY (SELECT Salary FROM Employees WHERE DepartmentID = 3);
 -- Returns employees whose salary is greater than any employee in department 3
-ALL: Compares a value to all values in a list or subquery.
+```
 
-sql
-Copy code
+ALL: Compares a value to all values in a list or subquery.
+```sql
 SELECT * FROM Employees WHERE Salary > ALL (SELECT Salary FROM Employees WHERE DepartmentID = 3);
 -- Returns employees whose salary is greater than all employees in department 3
-SOME: Synonym for ANY, used to compare a value to a list or subquery.
+```
 
-sql
-Copy code
+SOME: Synonym for ANY, used to compare a value to a list or subquery.
+```sql
 SELECT * FROM Employees WHERE Salary > SOME (SELECT Salary FROM Employees WHERE DepartmentID = 3);
 -- Returns employees whose salary is greater than at least one employee in department 3
+```
+
 These are the main SQL operators, each serving different purposes depending on the context of your query
