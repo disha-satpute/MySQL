@@ -171,49 +171,50 @@ SELECT 5 >> 1 AS BitwiseRightShift;
 ```
 
 **5. Set Operators -**
+
 Set operators are used to combine the results of two or more SELECT queries.
 
 UNION: Combines the result sets of two queries and removes duplicates.
-
-sql
-Copy code
+```sql
 SELECT FirstName FROM Employees WHERE DepartmentID = 1
 UNION
 SELECT FirstName FROM Employees WHERE DepartmentID = 2;
 -- Returns the combined result of employees from department 1 and 2, with no duplicates
-UNION ALL: Combines the result sets of two queries, including duplicates.
+```
 
-sql
-Copy code
+UNION ALL: Combines the result sets of two queries, including duplicates.
+```sql
 SELECT FirstName FROM Employees WHERE DepartmentID = 1
 UNION ALL
 SELECT FirstName FROM Employees WHERE DepartmentID = 2;
 -- Returns the combined result of employees from department 1 and 2, with duplicates
-INTERSECT: Returns only the rows that appear in both result sets (supported in databases like Oracle and SQL Server, not in MySQL).
+```
 
-sql
-Copy code
+INTERSECT: Returns only the rows that appear in both result sets (supported in databases like Oracle and SQL Server, not in MySQL).
+```sql
 SELECT FirstName FROM Employees WHERE DepartmentID = 1
 INTERSECT
 SELECT FirstName FROM Employees WHERE DepartmentID = 2;
 -- Returns the names of employees who are in both department 1 and 2
-MINUS (or EXCEPT in SQL Server): Returns the rows from the first result set that are not in the second result set.
+```
 
-sql
-Copy code
+MINUS (or EXCEPT in SQL Server): Returns the rows from the first result set that are not in the second result set.
+```sql
 SELECT FirstName FROM Employees WHERE DepartmentID = 1
 MINUS
 SELECT FirstName FROM Employees WHERE DepartmentID = 2;
 -- Returns employees in department 1 who are not in department 2 (Oracle syntax)
-6. String Operators
+```
+
+**6. String Operators -**
+
 These operators are used to perform operations on string data.
 
-|| or + (Concatenation): Concatenates two strings (syntax varies by database).
-
-sql
-Copy code
+'||' or '+' (Concatenation): Concatenates two strings (syntax varies by database).
+```sql
 SELECT FirstName || ' ' || LastName AS FullName FROM Employees;
 -- Returns the full name of employees by concatenating the first and last names (Oracle/PostgreSQL syntax)
+```
 sql
 Copy code
 SELECT FirstName + ' ' + LastName AS FullName FROM Employees;
