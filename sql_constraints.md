@@ -10,7 +10,7 @@ Types of SQL Constraints :
 - FOREIGN KEY <br>
 - CHECK <br>
 - DEFAULT <br>
-  AUTO_INCREMENT<br>
+- AUTO_INCREMENT<br>
 
 **1. NOT NULL -**
 
