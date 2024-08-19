@@ -252,10 +252,10 @@ Transaction Control Language (TCL)
 TCL commands are used to manage transactions in a database. A transaction is a sequence of one or more SQL statements that are executed as a single unit of work.<br> TCL commands help in controlling the execution of these transactions, ensuring the integrity and consistency of the database.
 
 Common TCL Commands:
-COMMIT<br>
-ROLLBACK<br>
-SAVEPOINT<br>
-SET TRANSACTION<br>
+- COMMIT<br>
+- ROLLBACK<br>
+- SAVEPOINT<br>
+- SET TRANSACTION<br>
 
 o COMMIT:
 
@@ -383,7 +383,6 @@ SELECT * FROM Employees
 WHERE Salary > 50000;
 ```
 
-
 (Less than) <  -
 
 Retrieve employees who were hired before the year 2020 :
@@ -393,7 +392,6 @@ SELECT * FROM Employees
 WHERE HireDate < '2020-01-01';
 ```
 
-
 (Greater than or equal to) >=  -
 
 Retrieve employees with a salary of at least 50,000 :
@@ -402,7 +400,6 @@ Retrieve employees with a salary of at least 50,000 :
 SELECT * FROM Employees
 WHERE Salary >= 50000;
 ```
-
 
 (Less than or equal to) <= -
 
