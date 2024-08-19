@@ -4,13 +4,13 @@ SQL constraints are rules enforced on data columns in a database table to ensure
 
 Types of SQL Constraints :
 
-NOT NULL <br>
-UNIQUE <br>
-PRIMARY KEY <br>
-FOREIGN KEY <br>
-CHECK <br>
-DEFAULT <br>
-AUTO_INCREMENT<BR>
+- NOT NULL <br>
+- UNIQUE <br>
+- PRIMARY KEY <br>
+- FOREIGN KEY <br>
+- CHECK <br>
+- DEFAULT <br>
+  AUTO_INCREMENT<br>
 
 **1. NOT NULL -**
 
