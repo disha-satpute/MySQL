@@ -96,20 +96,24 @@ Example:
 -- Error: Deadlock detected.
 ```
 
-9. Query Timeout Errors
+**9. Query Timeout Errors -**
+
 These occur when a query takes too long to execute, typically due to complex queries or large data sets.
 
 Example:
-sql
-Copy code
+```sql
 SELECT * FROM LargeTable;
 -- Error: Query execution exceeded the timeout limit.
-10. Invalid Operation Errors
+```
+
+**10. Invalid Operation Errors -**
+
 These occur when attempting to perform operations that are not allowed or make no sense in context.
 
 Example: Trying to update a view directly.
-sql
-Copy code
+```sql
 UPDATE MyView SET Column1 = 'NewValue';
 -- Error: Cannot modify a view directly; update the underlying table.
+```
+
 Understanding these errors can help diagnose issues in SQL statements and fix them effectively.
