@@ -17,4 +17,24 @@ Example: Misspelling a keyword or identifier.
 ```sql
 SELCT * FROM Employees;
 -- Error: "SELCT" is not recognized as a valid SQL keyword.
-``
+```
+
+**2. Constraint Violations -**
+
+These occur when data being inserted or updated violates constraints defined on the table.
+
+Primary Key Violation:
+
+```sql
+INSERT INTO Employees (EmployeeID, FirstName, LastName) VALUES (1, 'John', 'Doe');
+INSERT INTO Employees (EmployeeID, FirstName, LastName) VALUES (1, 'Jane', 'Smith');
+-- Error: Duplicate entry '1' for key 'PRIMARY'.
+```
+
+Foreign Key Violation:
+```sql
+INSERT INTO Orders (OrderID, CustomerID) VALUES (101, 9999);
+-- Error: Foreign key constraint fails because CustomerID 9999 does not exist in the Customers table.
+```
+
+**3. Data Type Errors -**
