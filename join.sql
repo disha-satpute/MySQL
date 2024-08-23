@@ -64,9 +64,9 @@ RIGHT  JOIN Departments
 ON Teacher.DeptID = Departments.DeptID;
 
 
-/*Full (outer) Join - The FULL JOIN returns all rows from both the Teacher and Departments tables. 
+/*Full (outer) Join - The FULL JOIN returns all rows from both the Teacher and Departments tables.
                       Teachers that has no department names and department that has no teachers. */
-                      
+
 SELECT first_name,last_name,Departments.DeptName
 FROM Teacher
 FULL JOIN Departments
