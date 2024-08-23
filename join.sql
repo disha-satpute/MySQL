@@ -1,4 +1,5 @@
 CREATE DATABASE collage;
+
 USE collage;
 
 CREATE TABLE teacher(
