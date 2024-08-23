@@ -23,11 +23,14 @@ INSERT INTO Teacher(Teacher_id,first_name,last_name,DeptID) VALUES
 (25 ,'shreya' ,'gholap' ,3) ,
 (26 ,"sara ","salunke",NULL );
 
+
 INSERT INTO Departments (DeptID, DeptName) VALUES (1, 'Computer');
 INSERT INTO Departments (DeptID, DeptName) VALUES (2, 'Automobile');
 INSERT INTO Departments (DeptID, DeptName) VALUES (3, 'IT');
 
+
 SELECT * FROM Teacher;
+
 SELECT * FROM Departments;
 
 /* Inner Join - The INNER JOIN returns only the rows which is a match between
