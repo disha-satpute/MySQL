@@ -12,6 +12,7 @@ CREATE TABLE Departments (
     DeptID INT PRIMARY KEY,
     DeptName VARCHAR(50) NOT NULL
 );
+
 SHOW TABLES;
 
 INSERT INTO Teacher(Teacher_id,first_name,last_name,DeptID) VALUES
