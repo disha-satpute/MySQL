@@ -88,10 +88,27 @@ SELECT first_name, last_name, DeptName
 FROM Teacher
 CROSS JOIN Departments;
 
-/* Self Join - A SELF JOIN is a join where a table is joined with itself. This can be useful
+
+/*  Self Join - A SELF JOIN is a join where a table is joined with itself. This can be useful
                in scenarios where you need to compare rows within the same table.  */
 
-SELECT e1.FirstName AS Employee, e2.FirstName AS Manager
-FROM Employees e1
-INNER JOIN Employees e2
-ON e1.ManagerID = e2.EmployeeID;
+ALTER TABLE Teacher ADD MentorID INT;
+
+SET SQL_SAFE_UPDATES = 0; 
+
+UPDATE Teacher SET MentorID = 21 WHERE Teacher_id IN (22, 24); -- Disha mentors Sanika and Darshan
+UPDATE Teacher SET MentorID = 22 WHERE Teacher_id = 23;         -- Sanika mentors Kirti
+UPDATE Teacher SET MentorID = 23 WHERE Teacher_id IN (25, 26);  -- Kirti mentors Raj and Shreya
+
+SET SQL_SAFE_UPDATES = 1; 
+
+SELECT 
+    t1.first_name AS Teacher,
+    t2.first_name AS Mentor
+FROM 
+    Teacher t1
+LEFT JOIN 
+    Teacher t2 
+ON 
+    t1.MentorID = t2.Teacher_id;
+
