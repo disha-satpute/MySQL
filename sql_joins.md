@@ -153,8 +153,7 @@ Result:
 Explanation: <br>The RIGHT JOIN returns all rows from the Departments table, including the new "Legal" department, even though there are no employees in it. The FirstName and LastName columns for that department are NULL.
 
 
-
-## 4. FULL (OUTER) JOIN - 
+## 4. FULL (OUTER) JOIN -
 The FULL JOIN (or FULL OUTER JOIN) returns all rows when there is a match in either left (table1) or right (table2) table. If there is no match, the result is NULL on the side where there is no match.
 
 Syntax:
