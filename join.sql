@@ -79,3 +79,13 @@ UNION
 SELECT first_name, last_name, Departments.DeptName
 FROM Teacher
 RIGHT JOIN Departments ON Teacher.DeptID = Departments.DeptID;
+
+/* Cross Join - The CROSS JOIN returns the Cartesian product of two tables, meaning it combines each
+                row from the first table with every row from the second table. 
+                This results in all possible combinations of rows between the two tables. */
+
+SELECT first_name, last_name, DeptName
+FROM Teacher
+CROSS JOIN Departments;
+
+/* Self 
