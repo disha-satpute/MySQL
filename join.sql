@@ -88,4 +88,10 @@ SELECT first_name, last_name, DeptName
 FROM Teacher
 CROSS JOIN Departments;
 
-/* Self 
+/* Self Join - A SELF JOIN is a join where a table is joined with itself. This can be useful
+               in scenarios where you need to compare rows within the same table.  */
+
+SELECT e1.FirstName AS Employee, e2.FirstName AS Manager
+FROM Employees e1
+INNER JOIN Employees e2
+ON e1.ManagerID = e2.EmployeeID;
