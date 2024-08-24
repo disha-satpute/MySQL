@@ -7,9 +7,9 @@ Types of SQL Joins :
 - INNER JOIN <br>
 - LEFT (OUTER) JOIN <br>
 - RIGHT (OUTER) JOIN <br>
-FULL (OUTER) JOIN <br>
-CROSS JOIN <br>
-SELF JOIN <br>
+- FULL (OUTER) JOIN <br>
+- CROSS JOIN <br>
+- SELF JOIN <br>
 
 Let’s explore each of these joins in detail with examples.
 
