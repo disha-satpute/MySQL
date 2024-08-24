@@ -224,6 +224,7 @@ Result:
 Explanation: <br>The CROSS JOIN returns every possible combination of Employees and Departments. For example, Sanika is paired with every department, Disha is paired with every department, and so on.
 
 ## 6. SELF JOIN -
+
 A SELF JOIN is a join where a table is joined with itself. This can be useful in scenarios where you need to compare rows within the same table.
 
 Syntax:
