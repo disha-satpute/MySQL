@@ -207,6 +207,7 @@ SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
 FROM Employees
 CROSS JOIN Departments;
 ```
+
 Result:
 
 | FirstName      | LastName | DepartmentName |
