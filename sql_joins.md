@@ -282,7 +282,7 @@ SELF JOIN: Joins a table to itself to compare rows within the same table.<br>
 These different types of joins allow you to perform complex queries across multiple tables and retrieve data based on relationships and conditions.
 
 
-# Implementation 
+# Implementation
 o You can Implement all commands of Joins by giving reference of 'join.sql' script which is available in this Repository.<br>
 
 o You can also <a href="https://github.com/disha-satpute/MySQL/blob/main/join.sql">Click Here</a> To get direct access to that Sql Script.

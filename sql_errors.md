@@ -1,4 +1,4 @@
-# SQL Errors 
+# SQL Errors
 
 In SQL, errors can occur for various reasons, such as syntax issues, constraint violations, or invalid operations. <br>Here’s a brief overview of common types of SQL errors:
 
