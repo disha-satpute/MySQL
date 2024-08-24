@@ -66,9 +66,16 @@ ON Teacher.DeptID = Departments.DeptID;
 
 
 /* Full (outer) Join - The FULL JOIN returns all rows from both the Teacher and Departments tables.
-                      Teachers that has no department names and department that has no teachers. */
+                      Teachers that has no department names and department that has no teachers. 
 
-SELECT first_name,last_name,Departments.DeptName
+In databases like MySQL, where FULL JOIN (also called FULL OUTER JOIN) is not supported, 
+you can simulate the same effect by combining the results of 
+LEFT JOIN and RIGHT JOIN using a UNION  */
+
+SELECT first_name, last_name, Departments.DeptName
 FROM Teacher
-FULL JOIN Departments
-ON Teacher.DeptID = Departments.DeptID;
+LEFT JOIN Departments ON Teacher.DeptID = Departments.DeptID
+UNION
+SELECT first_name, last_name, Departments.DeptName
+FROM Teacher
+RIGHT JOIN Departments ON Teacher.DeptID = Departments.DeptID;
