@@ -1,17 +1,18 @@
 # MySQL Safe Update Mode
 
-When performing UPDATE or DELETE operations, MySQL's safe update mode can prevent queries that might inadvertently affect many rows. The error encountered:
+When performing UPDATE or DELETE operations, MySQL's safe update mode can prevent queries that might inadvertently affect many rows. The error encountered :
 
-sql
-Copy code
+```sql
 Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.
+```
+
 Solution Steps:
 
 a. Temporarily Disable Safe Update Mode:
-sql
-Copy code
+```sql
 SET SQL_SAFE_UPDATES = 0;
 Perform the Update:
+```
 
 sql
 Copy code
