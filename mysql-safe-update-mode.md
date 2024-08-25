@@ -30,9 +30,9 @@ b. Permanently Disable Safe Update Mode :
 
 Using MySQL Workbench:
 
-Navigate to Edit > Preferences.
-Select the SQL Editor tab.
-Uncheck the Safe Updates option.
-Reconnect to the database for changes to take effect.
+Navigate to Edit > Preferences.<br>
+Select the SQL Editor tab.<br>
+Uncheck the Safe Updates option.<br>
+Reconnect to the database for changes to take effect.<br>
 
-Note: Disabling safe update mode permanently is not generally recommended as it can lead to accidental mass updates or deletions.
+Note : Disabling safe update mode permanently is not generally recommended as it can lead to accidental mass updates or deletions.
