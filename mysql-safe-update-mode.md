@@ -6,7 +6,7 @@ When performing UPDATE or DELETE operations, MySQL's safe update mode can preven
 Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.
 ```
 
-Solution Steps :
+- Solution Steps :
 
 a. Temporarily Disable Safe Update Mode :
 
@@ -34,5 +34,6 @@ Navigate to Edit > Preferences.<br>
 Select the SQL Editor tab.<br>
 Uncheck the Safe Updates option.<br>
 Reconnect to the database for changes to take effect.<br>
+
 
 Note : Disabling safe update mode permanently is not generally recommended as it can lead to accidental mass updates or deletions.
