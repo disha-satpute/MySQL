@@ -89,3 +89,49 @@ SELECT POWER(2, 3); -- Output: 8
 ```sql
 SELECT MOD(10, 3); -- Output: 1
 ```
+
+## 3. Date and Time Functions
+
+**NOW() :**
+ Returns the current date and time.
+
+```sql
+SELECT NOW(); -- Output: '2024-08-29 14:50:00'
+```
+
+**CURDATE() :**
+ Returns the current date.
+
+```sql
+SELECT CURDATE(); -- Output: '2024-08-29'
+```
+
+**CURTIME() :**
+ Returns the current time.
+
+```sql
+SELECT CURTIME(); -- Output: '14:50:00'
+```
+
+**DATE_ADD() :**
+ Adds a time/date interval to a date.
+
+```sql
+SELECT DATE_ADD('2024-08-29', INTERVAL 7 DAY); -- Output: '2024-09-05'
+```
+
+**DATEDIFF() :**
+ Returns the difference in days between two dates.
+
+```sql
+SELECT DATEDIFF('2024-09-05', '2024-08-29'); -- Output: 7
+```
+
+**YEAR() / MONTH() / DAY() :**
+ Extracts the year, month, or day from a date.
+
+```sql
+SELECT YEAR(NOW()); -- Output: 2024
+SELECT MONTH(NOW()); -- Output: 8
+SELECT DAY(NOW()); -- Output: 29
+```
