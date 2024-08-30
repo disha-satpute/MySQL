@@ -135,3 +135,40 @@ SELECT YEAR(NOW()); -- Output: 2024
 SELECT MONTH(NOW()); -- Output: 8
 SELECT DAY(NOW()); -- Output: 29
 ```
+
+## 4. Aggregate Functions
+
+**COUNT() :**
+ Returns the number of rows that match a specified condition.
+
+```sql
+SELECT COUNT(*) FROM Teacher; -- Output: Number of rows in Teacher table
+```
+
+**SUM() :**
+ Returns the sum of a numeric column.
+
+```sql
+SELECT SUM(salary) FROM Employee; -- Output: Total salary
+```
+
+**AVG() :**
+ Returns the average value of a numeric column.
+
+```sql
+SELECT AVG(salary) FROM Employee; -- Output: Average salary
+```
+
+**MIN() :**
+ Returns the minimum value in a set.
+
+```sql
+SELECT MIN(salary) FROM Employee; -- Output: Lowest salary
+```
+
+**MAX() :**
+ Returns the maximum value in a set.
+
+```sql
+SELECT MAX(salary) FROM Employee; -- Output: Highest salary
+```
