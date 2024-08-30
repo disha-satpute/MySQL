@@ -5,8 +5,7 @@ MySQL functions are built-in operations that perform a variety of tasks on data 
 Here’s a summary of the most commonly used MySQL functions :
 
 
-## 1. String Functions :
-
+## 1. String Functions
 **CONCAT() :**
  Concatenates two or more strings.
 
@@ -45,4 +44,48 @@ SELECT UPPER('hello'); -- Output: 'HELLO'
 
 ```sql
 SELECT TRIM('  Hello  '); -- Output: 'Hello'
+```
+
+## 2. Numeric Functions
+
+**ABS() :**
+ Returns the absolute value of a number.
+
+```sql
+SELECT ABS(-10); -- Output: 10
+```
+
+**ROUND() :**
+ Rounds a number to a specified number of decimal places.
+
+```sql
+SELECT ROUND(123.456, 2); -- Output: 123.46
+```
+
+**CEIL() / CEILING() :**
+ Returns the smallest integer greater than or equal to a number.
+
+```sql
+SELECT CEIL(1.2); -- Output: 2
+```
+
+**FLOOR() :**
+ Returns the largest integer less than or equal to a number.
+
+```sql
+SELECT FLOOR(1.8); -- Output: 1
+```
+
+**POWER():**
+ Returns a number raised to the power of another number.
+
+```sql
+SELECT POWER(2, 3); -- Output: 8
+```
+
+**MOD():**
+ Returns the remainder of a division.
+
+```sql
+SELECT MOD(10, 3); -- Output: 1
 ```
