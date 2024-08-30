@@ -7,10 +7,10 @@
 In this repo ,we studied SQL(structure Query Language) using MySQL workbench.
 
 
-<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_basic.md">Basic Info</a> <br/>
-<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_constraints.md">Basic Info</a> <br/>
-<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_datatypes.md">Basic Info</a> <br/> 
-<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_joins.md">Basic Info</a> <br/>
-<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_operators.md">Basic Info</a> <br/> 
-<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_functions.md">Basic Info</a> <br/>
-<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_errors.md">Basic Info</a> <br/> 
+<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_basic.md">SQL Basic Info</a> <br/>
+<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_constraints.md">SQL Constraints</a> <br/>
+<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_datatypes.md">SQL Datatypes</a> <br/>
+<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_joins.md">SQL Joins</a> <br/>
+<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_operators.md">SQL Operators</a> <br/>
+<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_functions.md">SQL Functions</a> <br/>
+<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_errors.md">SQL Errors</a> <br/>
