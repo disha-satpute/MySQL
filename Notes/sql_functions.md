@@ -173,7 +173,7 @@ SELECT MIN(salary) FROM Employee; -- Output: Lowest salary
 SELECT MAX(salary) FROM Employee; -- Output: Highest salary
 ```
 
-5. Control Flow Functions
+## 5. Control Flow Functions
 
 **IF() :** Returns one value if a condition is true and another if it is false.
 
@@ -181,7 +181,7 @@ SELECT MAX(salary) FROM Employee; -- Output: Highest salary
 SELECT IF(salary > 5000, 'High', 'Low') FROM Employee;
 ```
 
-***CASE :** Similar to IF(), but allows for multiple conditions.
+**CASE :** Similar to IF(), but allows for multiple conditions.
 
 ```sql
 SELECT
