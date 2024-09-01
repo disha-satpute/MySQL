@@ -184,10 +184,11 @@ SELECT IF(salary > 5000, 'High', 'Low') FROM Employee;
 ***CASE :** Similar to IF(), but allows for multiple conditions.
 
 ```sql
-SELECT 
-  CASE 
+SELECT
+  CASE
     WHEN salary > 10000 THEN 'High'
     WHEN salary > 5000 THEN 'Medium'
     ELSE 'Low'
   END AS Salary_Level
 FROM Employee;
+```
