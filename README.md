@@ -4,7 +4,7 @@
 
 - MySQL : MySQL is a popular open-source relational database management system (RDBMS) that uses SQL (Structured Query Language) to interact with and manage relational databases.
 
-In this repo ,we studied SQL(structure Query Language) using MySQL workbench.
+In this repository ,we studied SQL(structure Query Language) using MySQL workbench.
 
 
 <a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_basic.md">SQL Basic Info</a> <br/>
