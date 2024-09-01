@@ -478,7 +478,13 @@ SELECT * FROM Employees
 WHERE Email IS NOT NULL;
 ```
 
+**o LIMIT :**
 
+ Restricts the number of rows returned in the result set.
+
+```sql
+SELECT * FROM Students LIMIT 5;
+```
 
 
 
