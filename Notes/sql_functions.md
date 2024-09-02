@@ -12,6 +12,13 @@ Here’s a summary of the most commonly used MySQL functions :
 ```sql
 SELECT CONCAT('Hello', ' ', 'World'); -- Output: 'Hello World'
 ```
+**CONCAT_WS() :**
+
+ Concatenates strings with a separator. WS stands for "With Separator."
+
+```sql
+SELECT CONCAT_WS('-', '2024', '08', '29'); -- Returns '2024-08-29'
+```
 
 **SUBSTRING() :**
  Extracts a substring from a string.
