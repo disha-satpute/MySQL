@@ -134,7 +134,7 @@ Compound operators in SQL are shorthand notations that combine a basic operation
 
 Here’s a list of SQL compound operators and their explanations :
 
-1. += (Add equals) :
+1. += (Add equals) -
 
 This operator adds the value on the right to the current value of the column on the left and then assigns the result back to the column.
 
@@ -148,7 +148,8 @@ WHERE Department = 'IT';
 
 Explanation: This will increase the salary of all employees in the IT department by 1000.
 
-2. -= (Subtract and Assign)
+2. -= (Subtract equals) -
+
 This operator subtracts the value on the right from the current value of the column on the left and then assigns the result back to the column.
 
 Example:
@@ -161,7 +162,7 @@ WHERE ProductID = 101;
 
 Explanation: This will decrease the stock quantity of the product with ID 101 by 5.
 
-3. *= (Multiply and Assign) 
+3. *= (Multiply equals) -
 
 This operator multiplies the current value of the column on the left by the value on the right and then assigns the result back to the column.
 
@@ -175,7 +176,7 @@ WHERE Department = 'Sales';
 
 Explanation: This will increase the salary of all employees in the Sales department by 10%.
 
-4. /= (Divide and Assign)
+4. /= (Divide equals) -
 
 This operator divides the current value of the column on the left by the value on the right and then assigns the result back to the column.
 
@@ -189,7 +190,7 @@ WHERE EmployeeID = 102;
 
 Explanation: This will halve the salary of the employee with ID 102.
 
-5. %= (Modulus and Assign)
+5. %= (Modulus equals) -
 
 This operator calculates the remainder of the division of the current value of the column on the left by the value on the right and then assigns the result back to the column.
 
@@ -199,6 +200,7 @@ Example:
 UPDATE Payments
 SET PaymentAmount %= 500
 WHERE CustomerID = 201;
+```
 
 Explanation: This will update the PaymentAmount to the remainder when the current payment amount is divided by 500 for the customer with ID 201.
 
