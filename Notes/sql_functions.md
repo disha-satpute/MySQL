@@ -58,6 +58,19 @@ SELECT TRIM('  Hello  '); -- Output: 'Hello'
 ```sql
 SELECT ASCII('A'); -- Returns 65
 ```
+**INSERT() :**
+ Inserts a string into another string at a specified position.
+
+```sql
+SELECT INSERT('Hello World', 7, 0, 'SQL '); -- Returns 'Hello SQL World'
+```
+
+**INSTR() :**
+ Returns the position of the first occurrence of a substring in a string.
+
+```sql
+SELECT INSTR('Hello World', 'World'); -- Returns 7
+```
 
 ## 2. Numeric Functions
 
@@ -73,6 +86,13 @@ SELECT ABS(-10); -- Output: 10
 
 ```sql
 SELECT ROUND(123.456, 2); -- Output: 123.46
+```
+
+**FORMAT() :**
+Formats a number to a format like '#,###.##' with a specified number of decimal places.
+
+```sql
+SELECT FORMAT(1234567.89, 2); -- Returns '1,234,567.89'
 ```
 
 **CEIL() / CEILING() :**
