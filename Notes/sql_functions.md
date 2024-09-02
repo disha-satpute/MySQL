@@ -77,6 +77,12 @@ SELECT INSTR('Hello World', 'World'); -- Returns 7
 ```sql
 SELECT LOCATE('World', 'Hello World'); -- Returns 7
 ```
+**REPEAT() :**
+ Repeats a string a specified number of times.
+
+```sql
+SELECT REPEAT('SQL', 3); -- Returns 'SQLSQLSQL'
+```
 
 ## 2. Numeric Functions
 
