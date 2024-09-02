@@ -45,6 +45,12 @@ SELECT UPPER('hello'); -- Output: 'HELLO'
 ```sql
 SELECT TRIM('  Hello  '); -- Output: 'Hello'
 ```
+**ASCII() :**
+ Returns the ASCII value of the first character in a string.
+
+```sql
+SELECT ASCII('A'); -- Returns 65
+```
 
 ## 2. Numeric Functions
 
