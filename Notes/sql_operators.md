@@ -129,6 +129,9 @@ NOT: Reverses the result of a condition.
 SELECT * FROM Employees WHERE NOT DepartmentID = 3;
 -- Returns employees who are not in department 3
 ```
+**3. Compound Operators -**
+Compound operators in SQL are shorthand notations that combine a basic operation (like addition, subtraction, etc.) with an assignment. These operators modify the value of a column directly by performing an operation on it and updating the column with the result. Compound operators make SQL statements more concise and readable.
+
 
 **4. Bitwise Operators -**
 
