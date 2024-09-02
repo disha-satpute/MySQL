@@ -132,6 +132,76 @@ SELECT * FROM Employees WHERE NOT DepartmentID = 3;
 **3. Compound Operators -**
 Compound operators in SQL are shorthand notations that combine a basic operation (like addition, subtraction, etc.) with an assignment. These operators modify the value of a column directly by performing an operation on it and updating the column with the result. Compound operators make SQL statements more concise and readable.
 
+Here’s a list of SQL compound operators and their explanations :
+
+1. += (Add equals) :
+
+This operator adds the value on the right to the current value of the column on the left and then assigns the result back to the column.
+
+Example:
+
+```sql
+UPDATE Employees
+SET Salary += 1000
+WHERE Department = 'IT';
+```
+
+Explanation: This will increase the salary of all employees in the IT department by 1000.
+
+2. -= (Subtract and Assign)
+This operator subtracts the value on the right from the current value of the column on the left and then assigns the result back to the column.
+
+Example:
+
+```sql
+UPDATE Products
+SET StockQuantity -= 5
+WHERE ProductID = 101;
+```
+
+Explanation: This will decrease the stock quantity of the product with ID 101 by 5.
+
+3. *= (Multiply and Assign) 
+
+This operator multiplies the current value of the column on the left by the value on the right and then assigns the result back to the column.
+
+Example:
+
+```sql
+UPDATE Employees
+SET Salary *= 1.10
+WHERE Department = 'Sales';
+```
+
+Explanation: This will increase the salary of all employees in the Sales department by 10%.
+
+4. /= (Divide and Assign)
+
+This operator divides the current value of the column on the left by the value on the right and then assigns the result back to the column.
+
+Example:
+
+```sql
+UPDATE Employees
+SET Salary /= 2
+WHERE EmployeeID = 102;
+```
+
+Explanation: This will halve the salary of the employee with ID 102.
+
+5. %= (Modulus and Assign)
+
+This operator calculates the remainder of the division of the current value of the column on the left by the value on the right and then assigns the result back to the column.
+
+Example:
+
+```sql
+UPDATE Payments
+SET PaymentAmount %= 500
+WHERE CustomerID = 201;
+
+Explanation: This will update the PaymentAmount to the remainder when the current payment amount is divided by 500 for the customer with ID 201.
+
 
 **4. Bitwise Operators -**
 
