@@ -71,6 +71,12 @@ SELECT INSERT('Hello World', 7, 0, 'SQL '); -- Returns 'Hello SQL World'
 ```sql
 SELECT INSTR('Hello World', 'World'); -- Returns 7
 ```
+**LOCATE() :**
+ Returns the position of the first occurrence of a substring in a string (similar to 'INSTR()').
+
+```sql
+SELECT LOCATE('World', 'Hello World'); -- Returns 7
+```
 
 ## 2. Numeric Functions
 
