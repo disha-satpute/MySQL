@@ -19,7 +19,6 @@ e.g. MySql,Oracle,PostgreSQL,SQLite,SQLserver<br>
 | 101   |  Disha   | disha44@gmail.com | di1234       |
 |       |          |                   |              |
 +-------+----------+-------------------+--------------+
-
    ```
 o	Non-Relational Database :<br>
 
