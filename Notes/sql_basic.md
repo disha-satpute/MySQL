@@ -11,6 +11,7 @@ o	Relational Database : <br>
 
 In this Database,data stored in table (rows & columns) format.<br>
 e.g. MySql,Oracle,PostgreSQL,SQLite,SQLserver<br>
+
   ```sql
 
 +-------+----------+-------------------+--------------+
