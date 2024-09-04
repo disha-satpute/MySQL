@@ -44,13 +44,9 @@ It’s a standardized language used for managing and manipulating relational dat
 DDL, DML, and DCL are subsets of Structured Query Language used to interact with and manage relational databases. Each subset serves a distinct purpose in database management:
 
 o	DDL: Defines and manages database schema and structure.<br>
-
 o	DML: Manages and manipulates data within the database tables.<br>
-
 o	DCL: Controls access and permissions to the database and its objects.<br>
-
 o TCL: Manages database transactions, allowing control over committing, rolling back, and setting savepoints.<br>
-
 o DQL: Focuses on querying and retrieving data from the database, primarily using the SELECT statement.<br>
 
 
