@@ -15,3 +15,15 @@ Key Characteristics of Views :
 - Security: Views can be used to expose only specific columns or rows to users, hiding sensitive data from direct access.
 
 - Reusability: Once created, a view can be reused in other queries, making complex queries simpler.
+
+Advantages of Using Views:
+
+- Simplifies Complex Queries: Instead of writing complex queries multiple times, you can create a view and use it as a simple reference in future queries.
+
+- Data Security: Views can limit the access to specific columns or rows, improving security by controlling what data is exposed to users.
+
+- Data Aggregation: Views can aggregate data (using GROUP BY, JOIN, etc.) and present it in a summarized form.
+
+- Data Independence: If the structure of the underlying tables changes, you can modify the view without altering queries that use the view.
+
+- Improves Readability: Views can improve the readability of queries by breaking down complex logic into smaller, reusable components.
