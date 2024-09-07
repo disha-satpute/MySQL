@@ -11,15 +11,14 @@ o	Relational Database : <br>
 
 In this Database,data stored in table (rows & columns) format.<br>
 e.g. MySql,Oracle,PostgreSQL,SQLite,SQLserver<br>
-  ```sql
 
+  ```sql
 +-------+----------+-------------------+--------------+
 | Id    | username | email             | password     |
 +------------------+-------------------+--------------+
 | 101   |  Disha   | disha44@gmail.com | di1234       |
 |       |          |                   |              |
 +-------+----------+-------------------+--------------+
-
    ```
 o	Non-Relational Database :<br>
 
