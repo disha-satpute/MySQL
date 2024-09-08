@@ -27,3 +27,57 @@ Advantages of Using Views:
 - Data Independence: If the structure of the underlying tables changes, you can modify the view without altering queries that use the view.
 
 - Improves Readability: Views can improve the readability of queries by breaking down complex logic into smaller, reusable components.
+
+## Creating Views 
+
+syntax :
+```sql
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+
+Example :
+
+Suppose we have a table called Employees with columns EmpID, Name, Department, Salary, and we want to create a view to show only the employees in the IT department.
+
+```sql
+CREATE VIEW IT_Employees AS
+SELECT EmpID, Name, Salary
+FROM Employees
+WHERE Department = 'IT';
+```
+
+You can now query the IT_Employees view as if it were a table:
+
+```sql
+SELECT * FROM IT_Employees;
+```
+
+This will return all employees from the IT department with their EmpID, Name, and Salary.
+
+## Updating Views 
+
+- Views can sometimes be updated, which means you can use an UPDATE, INSERT, or DELETE statement on a view, and the changes will reflect in the underlying table.
+
+- However, not all views are updatable. If the view contains complex joins, aggregations, or uses DISTINCT, GROUP BY, HAVING, or subqueries, the view might not be updatable.
+
+Example of an Updatable View:
+
+If you create a simple view like:
+```sql
+CREATE VIEW Salary_View AS
+SELECT EmpID, Salary
+FROM Employees;
+```
+
+You can update the salary for an employee through the view:
+
+```sql
+UPDATE Salary_View
+SET Salary = 75000
+WHERE EmpID = 101;
+```
+
+This will update the Salary in the underlying Employees table.
