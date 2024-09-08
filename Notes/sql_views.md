@@ -81,3 +81,17 @@ WHERE EmpID = 101;
 ```
 
 This will update the Salary in the underlying Employees table.
+
+## Dropping Views
+
+To remove a view, use the DROP VIEW statement:
+
+```sql
+DROP VIEW view_name;
+```
+
+Example:
+
+```sql
+DROP VIEW IT_Employees;
+```
