@@ -13,5 +13,6 @@ In this repository ,we studied SQL(structure Query Language) using MySQL workben
 <a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_joins.md">SQL Joins</a> <br/>
 <a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_operators.md">SQL Operators</a> <br/>
 <a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_functions.md">SQL Functions</a> <br/>
-<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_errors.md">SQL Errors</a> <br/>
 <a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_views.md">SQL Views</a> <br/>
+<a href="https://github.com/disha-satpute/MySQL/blob/main/Notes/sql_errors.md">SQL Errors</a> <br/>
+
