@@ -95,3 +95,17 @@ Example:
 ```sql
 DROP VIEW IT_Employees;
 ```
+
+## Advantages and Limitations:
+
+Advantages:<br>
+
+Simplifies complex queries.<br>
+Enhances security by controlling data exposure.<br>
+Facilitates better management of access to sensitive data.<br>
+
+
+Limitations:<br>
+
+Views can sometimes be slow if based on very large datasets because they don’t store data and must recompute results every time.<br>
+Some views may not be updatable, depending on the complexity of the query.
