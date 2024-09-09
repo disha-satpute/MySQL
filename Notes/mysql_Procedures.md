@@ -26,7 +26,7 @@ Explanation:
 
 - It selects all employees from the Employees table where the department ID matches the given input.
 
-To call this procedure:
+### To call this procedure:
 
 ```sql
 CALL GetEmployeesByDept(3);
