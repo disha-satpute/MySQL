@@ -8,11 +8,11 @@ WHERE DeptID= 3;
 
 select * from Clg_Teacher;
 
-  SET SQL_SAFE_UPDATES = 0;
-  
-  
+SET SQL_SAFE_UPDATES = 0;
+
+
   /* Update View */
-  
+
 UPDATE Clg_Teacher
 SET first_name = "madhuri"
 WHERE Teacher_id = 25;
