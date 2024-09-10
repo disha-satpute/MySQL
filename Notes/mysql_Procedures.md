@@ -34,10 +34,9 @@ CALL GetEmployeesByDept(3);
 ```
 
 ## Stored Procedure with OUT Parameter
-This procedure calculates the total salary of all employees in a department and returns the result using an OUT parameter.
 
-sql
-Copy code
+This procedure calculates the total salary of all employees in a department and returns the result using an OUT parameter.
+```sql
 DELIMITER $$
 
 CREATE PROCEDURE GetTotalSalaryByDept(IN dept_id INT, OUT total_salary DECIMAL(10, 2))
@@ -48,13 +47,15 @@ BEGIN
 END $$
 
 DELIMITER ;
+```
+
 Explanation:
 
-The procedure GetTotalSalaryByDept takes an IN parameter dept_id and an OUT parameter total_salary.
-It calculates the total salary for the given department and stores the result in total_salary.
+- The procedure GetTotalSalaryByDept takes an IN parameter dept_id and an OUT parameter total_salary.
+- It calculates the total salary for the given department and stores the result in total_salary.
+  
 To call this procedure:
-
-sql
-Copy code
+```sql
 CALL GetTotalSalaryByDept(3, @total_salary);
 SELECT @total_salary;  -- To retrieve the output value
+```
