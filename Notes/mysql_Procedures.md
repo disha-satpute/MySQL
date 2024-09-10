@@ -54,7 +54,7 @@ Explanation:
 - The procedure GetTotalSalaryByDept takes an IN parameter dept_id and an OUT parameter total_salary.
 - It calculates the total salary for the given department and stores the result in total_salary.
   
-To call this procedure:
+### To call this procedure:
 ```sql
 CALL GetTotalSalaryByDept(3, @total_salary);
 SELECT @total_salary;  -- To retrieve the output value
