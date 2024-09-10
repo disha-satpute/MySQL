@@ -18,6 +18,7 @@ END $$
 
 DELIMITER ;
 ```
+
 Explanation:
 
 - DELIMITER $$ allows the use of $$ as a delimiter to define the procedure block since semicolons are used within the procedure.
