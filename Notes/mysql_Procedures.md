@@ -94,7 +94,9 @@ SELECT @emp_salary;  -- This will return 5500
 
 ## Modifying and Dropping Procedures
 
-To Modify a Procedure: You must drop the procedure first and then recreate it since MySQL does not support the ALTER PROCEDURE statement.
+To Modify a Procedure :
+
+You must drop the procedure first and then recreate it since MySQL does not support the ALTER PROCEDURE statement.
 
 ```sql
 DROP PROCEDURE IF EXISTS procedure_name;
