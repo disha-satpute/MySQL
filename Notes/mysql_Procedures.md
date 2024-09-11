@@ -84,7 +84,6 @@ The procedure IncrementSalary takes an INOUT parameter salary.
 
 It increases the input salary by 10% and returns the updated salary.
 
-
 ### To call this procedure:
 
 ```sql
