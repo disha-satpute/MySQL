@@ -149,3 +149,45 @@ DELIMITER ;
 ```
 
 In this example, the procedure calculates a bonus based on the salary range.
+
+
+**2. CASE Statement -**
+
+The CASE statement allows you to choose between multiple conditions and execute specific code for each case. It's similar to the switch statement in other languages.
+
+
+Simple CASE:
+
+```sql
+DELIMITER $$
+
+CREATE PROCEDURE GetDepartmentName(IN dept_id INT, OUT dept_name VARCHAR(100))
+BEGIN
+    CASE dept_id
+        WHEN 1 THEN SET dept_name = 'HR';
+        WHEN 2 THEN SET dept_name = 'Sales';
+        WHEN 3 THEN SET dept_name = 'IT';
+        ELSE SET dept_name = 'Unknown';
+    END CASE;
+END $$
+
+DELIMITER ;
+```
+
+Searched CASE:
+
+```sql
+DELIMITER $$
+
+CREATE PROCEDURE GetSalaryCategory(IN salary DECIMAL(10, 2), OUT category VARCHAR(50))
+BEGIN
+    CASE
+        WHEN salary > 5000 THEN SET category = 'High';
+        WHEN salary BETWEEN 3000 AND 5000 THEN SET category = 'Medium';
+        ELSE SET category = 'Low';
+    END CASE;
+END $$
+
+DELIMITER ;
+```
+In this example, the procedure classifies employees into categories based on their salary.
