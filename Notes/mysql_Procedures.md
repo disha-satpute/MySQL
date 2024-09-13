@@ -13,7 +13,7 @@ Input-Output Parameters (INOUT): Can be used both to send values into the proced
 Body: Contains SQL statements, including queries, updates, control flow constructs (IF, WHILE, etc.), and error handling.
 
 
-## Simple Stored Procedure 
+## Simple Stored Procedure
 
 This example creates a stored procedure that takes a department ID as input and returns all employees in that department.
 
