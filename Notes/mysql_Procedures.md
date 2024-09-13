@@ -147,14 +147,12 @@ END $$
 
 DELIMITER ;
 ```
-
 In this example, the procedure calculates a bonus based on the salary range.
 
 
 **2. CASE Statement -**
 
 The CASE statement allows you to choose between multiple conditions and execute specific code for each case. It's similar to the switch statement in other languages.
-
 
 Simple CASE:
 
