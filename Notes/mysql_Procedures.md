@@ -125,3 +125,27 @@ DROP PROCEDURE procedure_name;
 
 Stored procedures support control flow statements like-
 
+**1. IF...THEN...ELSE Statement -**
+
+The IF...THEN...ELSE statement allows you to execute a block of SQL code based on a specific condition. It works similarly to conditional statements in programming languages.
+
+```sql
+sql
+Copy code
+DELIMITER $$
+
+CREATE PROCEDURE CalculateBonus(IN salary DECIMAL(10, 2), OUT bonus DECIMAL(10, 2))
+BEGIN
+    IF salary > 5000 THEN
+        SET bonus = salary * 0.1;  -- 10% bonus for salary above 5000
+    ELSEIF salary BETWEEN 3000 AND 5000 THEN
+        SET bonus = salary * 0.05; -- 5% bonus for salary between 3000 and 5000
+    ELSE
+        SET bonus = salary * 0.03; -- 3% bonus for salary below 3000
+    END IF;
+END $$
+
+DELIMITER ;
+```
+
+In this example, the procedure calculates a bonus based on the salary range.
