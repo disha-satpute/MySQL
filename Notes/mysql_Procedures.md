@@ -190,4 +190,5 @@ END $$
 
 DELIMITER ;
 ```
+
 In this example, the procedure classifies employees into categories based on their salary.
