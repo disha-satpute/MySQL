@@ -2,6 +2,17 @@
 
 A stored procedure in MySQL is a set of SQL statements that are stored and executed on the database server.Stored procedures help improve performance by reducing the number of calls between the client and the server. They can include control structures, parameters, and can be used to encapsulate complex business logic.
 
+**Components of a Stored Procedure -**
+
+Input Parameters (IN): Used to pass values into the procedure.
+
+Output Parameters (OUT): Used to return values from the procedure.
+
+Input-Output Parameters (INOUT): Can be used both to send values into the procedure and get results back.
+
+Body: Contains SQL statements, including queries, updates, control flow constructs (IF, WHILE, etc.), and error handling.
+
+
 ## Simple Stored Procedure 
 
 This example creates a stored procedure that takes a department ID as input and returns all employees in that department.
