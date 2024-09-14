@@ -76,3 +76,9 @@ END $$
 DELIMITER ;
 
 <--Executing the Procedures
+
+CALL AddStudent(1, 'Disha', 'Satpute', '1998-05-15');
+
+CALL AddCourse(101, 'Java Programming', 3);
+
+CALL EnrollStudent(1, 101);
