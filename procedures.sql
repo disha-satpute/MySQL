@@ -24,3 +24,20 @@ CREATE TABLE Enrollments (
     FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
 );
+
+<--procedure to add new student
+
+DELIMITER $$
+
+CREATE PROCEDURE AddStudent(
+    IN p_StudentID INT,
+    IN p_FirstName VARCHAR(50),
+    IN p_LastName VARCHAR(50),
+    IN p_DateOfBirth DATE
+)
+BEGIN
+    INSERT INTO Students (StudentID, FirstName, LastName, DateOfBirth)
+    VALUES (p_StudentID, p_FirstName, p_LastName, p_DateOfBirth);
+END $$
+
+DELIMITER ;
