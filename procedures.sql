@@ -9,3 +9,9 @@ CREATE TABLE Students (
     LastName VARCHAR(50),
     DateOfBirth DATE
 );
+
+CREATE TABLE Courses (
+    CourseID INT PRIMARY KEY,
+    CourseName VARCHAR(100),
+    Credits INT
+);
