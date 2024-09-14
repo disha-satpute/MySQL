@@ -3,6 +3,8 @@ create database collage;
 
 use collage;
 
+<--- create 3 tables
+
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY,
     FirstName VARCHAR(50),
@@ -38,6 +40,22 @@ CREATE PROCEDURE AddStudent(
 BEGIN
     INSERT INTO Students (StudentID, FirstName, LastName, DateOfBirth)
     VALUES (p_StudentID, p_FirstName, p_LastName, p_DateOfBirth);
+END $$
+
+DELIMITER ;
+
+<--Procedure to Add a New Course
+
+DELIMITER $$
+
+CREATE PROCEDURE AddCourse(
+    IN p_CourseID INT,
+    IN p_CourseName VARCHAR(100),
+    IN p_Credits INT
+)
+BEGIN
+    INSERT INTO Courses (CourseID, CourseName, Credits)
+    VALUES (p_CourseID, p_CourseName, p_Credits);
 END $$
 
 DELIMITER ;
