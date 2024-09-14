@@ -190,3 +190,71 @@ DELIMITER ;
 ```
 
 In this example, the procedure classifies employees into categories based on their salary.
+
+**3. LOOP, WHILE, and REPEAT Statements :**
+
+- LOOP Statement
+
+The LOOP statement repeats a block of code indefinitely, until it's explicitly exited using a LEAVE statement.
+
+```sql
+DELIMITER $$
+
+CREATE PROCEDURE LoopExample()
+BEGIN
+    DECLARE counter INT DEFAULT 0;
+    loop_label: LOOP
+        SET counter = counter + 1;
+        IF counter = 5 THEN
+            LEAVE loop_label;
+        END IF;
+    END LOOP;
+END $$
+
+DELIMITER ;
+```
+
+In this example, the loop increments a counter until it reaches 5, at which point it exits the loop using LEAVE.
+
+- WHILE Loop
+
+The WHILE loop repeats a block of code as long as the condition is true.
+
+Syntax:
+
+```sql
+DELIMITER $$
+
+CREATE PROCEDURE WhileExample()
+BEGIN
+    DECLARE counter INT DEFAULT 0;
+    WHILE counter < 10 DO
+        SET counter = counter + 1;
+    END WHILE;
+END $$
+
+DELIMITER ;
+```
+
+In this example, the loop runs until the counter reaches 10.
+
+- REPEAT-UNTIL Loop 
+
+The REPEAT loop is similar to the WHILE loop, but it checks the condition after executing the block of code, so the code runs at least once.
+
+```sql
+DELIMITER $$
+
+CREATE PROCEDURE RepeatExample()
+BEGIN
+    DECLARE counter INT DEFAULT 0;
+    REPEAT
+        SET counter = counter + 1;
+    UNTIL counter = 10
+    END REPEAT;
+END $$
+
+DELIMITER ;
+```
+
+In this example, the loop runs until the counter reaches 10, but it guarantees that the block runs at least once.
