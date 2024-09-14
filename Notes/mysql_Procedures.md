@@ -238,7 +238,7 @@ DELIMITER ;
 
 In this example, the loop runs until the counter reaches 10.
 
-- REPEAT-UNTIL Loop 
+- REPEAT-UNTIL Loop
 
 The REPEAT loop is similar to the WHILE loop, but it checks the condition after executing the block of code, so the code runs at least once.
 
