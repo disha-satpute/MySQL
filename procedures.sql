@@ -59,3 +59,18 @@ BEGIN
 END $$
 
 DELIMITER ;
+
+<--Procedure to Enroll a Student in a Course
+
+DELIMITER $$
+
+CREATE PROCEDURE EnrollStudent(
+    IN p_StudentID INT,
+    IN p_CourseID INT
+)
+BEGIN
+    INSERT INTO Enrollments (StudentID, CourseID, EnrollmentDate)
+    VALUES (p_StudentID, p_CourseID, CURDATE());
+END $$
+
+DELIMITER ;
