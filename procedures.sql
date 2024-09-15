@@ -188,7 +188,6 @@ CALL GetCoursesForStudent(1);
 
 CALL DeleteStudent(1);
 
-
 -- 5.. Remove a student from a course:
 
 CALL RemoveStudentFromCourse(1, 101);
