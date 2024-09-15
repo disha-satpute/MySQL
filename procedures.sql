@@ -137,3 +137,18 @@ BEGIN
 END $$
 
 DELIMITER ;
+
+--Procedure to Delete a Student by ID
+
+
+DELIMITER $$
+
+CREATE PROCEDURE DeleteStudent(
+    IN p_StudentID INT
+)
+BEGIN
+    DELETE FROM Students
+    WHERE StudentID = p_StudentID;
+END $$
+
+DELIMITER ;
