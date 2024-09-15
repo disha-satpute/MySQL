@@ -168,3 +168,10 @@ BEGIN
 END $$
 
 DELIMITER ;
+
+
+--Executing the Procedures
+
+--1. Retrieve a student's details:
+
+CALL GetStudentDetails(1);
