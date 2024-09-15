@@ -104,3 +104,19 @@ END $$
 
 DELIMITER ;
 
+--Procedure to Retrieve All Students Enrolled in a Specific Course
+
+
+DELIMITER $$
+
+CREATE PROCEDURE GetStudentsInCourse(
+    IN p_CourseID INT
+)
+BEGIN
+    SELECT s.StudentID, s.FirstName, s.LastName, e.EnrollmentDate
+    FROM Enrollments e
+    JOIN Students s ON e.StudentID = s.StudentID
+    WHERE e.CourseID = p_CourseID;
+END $$
+
+DELIMITER ;
