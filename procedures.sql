@@ -172,6 +172,23 @@ DELIMITER ;
 
 --Executing the Procedures
 
---1. Retrieve a student's details:
+-- 1. Retrieve a student's details:
 
 CALL GetStudentDetails(1);
+
+-- 2. Retrieve students enrolled in a specific course:
+
+CALL GetStudentsInCourse(101);
+
+-- 3. Retrieve all courses a student is enrolled in:
+
+CALL GetCoursesForStudent(1);
+
+-- 4. Delete a student:
+
+CALL DeleteStudent(1);
+
+
+-- 5.. Remove a student from a course:
+
+CALL RemoveStudentFromCourse(1, 101);
