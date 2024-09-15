@@ -120,3 +120,20 @@ BEGIN
 END $$
 
 DELIMITER ;
+
+-- Procedure to Retrieve All Courses a Student is Enrolled In
+
+
+DELIMITER $$
+
+CREATE PROCEDURE GetCoursesForStudent(
+    IN p_StudentID INT
+)
+BEGIN
+    SELECT c.CourseID, c.CourseName, c.Credits, e.EnrollmentDate
+    FROM Enrollments e
+    JOIN Courses c ON e.CourseID = c.CourseID
+    WHERE e.StudentID = p_StudentID;
+END $$
+
+DELIMITER ;
