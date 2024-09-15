@@ -88,3 +88,19 @@ select * from courses;
 CALL EnrollStudent(1, 101);
 
 select * from enrollments;
+
+-- Procedure to Retrieve Student Details by ID
+
+DELIMITER $$
+
+CREATE PROCEDURE GetStudentDetails(
+    IN p_StudentID INT
+)
+BEGIN
+    SELECT StudentID, FirstName, LastName, DateOfBirth
+    FROM Students
+    WHERE StudentID = p_StudentID;
+END $$
+
+DELIMITER ;
+
