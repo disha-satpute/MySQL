@@ -1,9 +1,9 @@
 
-create database collage;
+create database clg_procedeures;
 
-use collage;
+use clg_procedeures;
 
-<--- create 3 tables
+-- create 3 tables
 
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY,
@@ -27,7 +27,7 @@ CREATE TABLE Enrollments (
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
 );
 
-<--procedure to add new student
+-- procedure to add new student
 
 DELIMITER $$
 
@@ -44,7 +44,7 @@ END $$
 
 DELIMITER ;
 
-<--Procedure to Add a New Course
+--Procedure to Add a New Course
 
 DELIMITER $$
 
@@ -60,7 +60,7 @@ END $$
 
 DELIMITER ;
 
-<--Procedure to Enroll a Student in a Course
+-- Procedure to Enroll a Student in a Course
 
 DELIMITER $$
 
@@ -75,10 +75,16 @@ END $$
 
 DELIMITER ;
 
-<--Executing the Procedures
+-- Executing the Procedures
 
 CALL AddStudent(1, 'Disha', 'Satpute', '1998-05-15');
 
+select * from students;
+
 CALL AddCourse(101, 'Java Programming', 3);
 
+select * from courses;
+
 CALL EnrollStudent(1, 101);
+
+select * from enrollments;
