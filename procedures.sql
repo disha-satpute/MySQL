@@ -152,3 +152,19 @@ BEGIN
 END $$
 
 DELIMITER ;
+
+--Procedure to Remove a Student from a Course
+
+
+DELIMITER $$
+
+CREATE PROCEDURE RemoveStudentFromCourse(
+    IN p_StudentID INT,
+    IN p_CourseID INT
+)
+BEGIN
+    DELETE FROM Enrollments
+    WHERE StudentID = p_StudentID AND CourseID = p_CourseID;
+END $$
+
+DELIMITER ;
