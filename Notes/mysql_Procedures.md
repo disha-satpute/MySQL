@@ -258,3 +258,13 @@ DELIMITER ;
 ```
 
 In this example, the loop runs until the counter reaches 10, but it guarantees that the block runs at least once.
+
+<hr/>
+
+# Implementation
+
+o You can Implement all commands of procedures by giving reference of 'procedures.sql' script which is available in this Repository.<br>
+
+o You can also <a href="https://github.com/disha-satpute/MySQL/blob/main/procedures.sql">Click Here</a> To get direct access to that Sql Script.
+
+
