@@ -1,6 +1,7 @@
 -- DDL
 CREATE DATABASE CompanyDB;
 USE CompanyDB;
+
 show TABLES;
 
 -- Create Departments table
@@ -32,6 +33,7 @@ RENAME TABLE Employees TO Staff;
 RENAME TABLE Staff TO Employees;
 
 -- DML
+
 -- Insert data into Departments table
 INSERT INTO Departments (DeptID, DeptName) VALUES (1, 'Human Resources');
 INSERT INTO Departments (DeptID, DeptName) VALUES (2, 'IT');
@@ -57,6 +59,7 @@ FROM Employees e
 JOIN Departments d ON e.DeptID = d.DeptID;
 
 -- DCL
+
 -- Create a new user with access from host
 CREATE USER 'username'@'host' IDENTIFIED BY 'password';
 -- Create a new user with access from localhost
