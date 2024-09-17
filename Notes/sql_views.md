@@ -1,7 +1,9 @@
 # SQL Views
 
-- A view in SQL is a virtual table based on the result of a SELECT query. 
-- It does not store data physically like a regular table but instead displays the data from one or more underlying tables dynamically when queried. 
+- A view in SQL is a virtual table based on the result of a SELECT query.
+
+- It does not store data physically like a regular table but instead displays the data from one or more underlying tables dynamically when queried.
+
 - A view can be thought of as a saved query that can be used as a table within SQL statements.
 
 Key Characteristics of Views :
@@ -16,9 +18,10 @@ Key Characteristics of Views :
 
 - Reusability: Once created, a view can be reused in other queries, making complex queries simpler.
 
-## Creating Views 
+## Creating Views
 
 syntax :
+
 ```sql
 CREATE VIEW view_name AS
 SELECT column1, column2, ...
@@ -45,7 +48,7 @@ SELECT * FROM IT_Employees;
 
 This will return all employees from the IT department with their EmpID, Name, and Salary.
 
-## Updating Views 
+## Updating Views
 
 - Views can sometimes be updated, which means you can use an UPDATE, INSERT, or DELETE statement on a view, and the changes will reflect in the underlying table.
 

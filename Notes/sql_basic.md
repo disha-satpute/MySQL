@@ -49,7 +49,6 @@ o	DCL: Controls access and permissions to the database and its objects.<br>
 o TCL: Manages database transactions, allowing control over committing, rolling back, and setting savepoints.<br>
 o DQL: Focuses on querying and retrieving data from the database, primarily using the SELECT statement.<br>
 
-
 ## DDL
 
 Data Definition Language (DDL) commands are used to define and manage the structure of database objects such as tables, indexes, and schemas. They deal with the schema of the database and manage the metadata, rather than the data itself. <br>Here’s an overview of the main DDL commands:
@@ -430,7 +429,6 @@ Retrieve employees who do not work in department 5 :
 SELECT * FROM Employees
 WHERE NOT DepartmentID = 5;
 ```
-
 
 **o Pattern Matching: LIKE, IN, BETWEEN**
 
