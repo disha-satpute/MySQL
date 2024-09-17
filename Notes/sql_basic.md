@@ -374,7 +374,6 @@ SELECT * FROM Employees
 WHERE DepartmentID <> 5;
 ```
 
-
 (Greater than)> -
 
 Retrieve employees with a salary greater than 50,000 :

@@ -1,4 +1,3 @@
-
 create database clg_procedeures;
 
 use clg_procedeures;
@@ -123,7 +122,6 @@ DELIMITER ;
 
 -- Procedure to Retrieve All Courses a Student is Enrolled In
 
-
 DELIMITER $$
 
 CREATE PROCEDURE GetCoursesForStudent(
@@ -192,3 +190,4 @@ CALL DeleteStudent(1);
 -- 5.. Remove a student from a course:
 
 CALL RemoveStudentFromCourse(1, 101);
+
