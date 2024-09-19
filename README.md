@@ -25,4 +25,5 @@ In this repository ,we studied SQL(structure Query Language) using MySQL workben
 ````bash 
 git clone //github.com/disha-satpute/MySQL.git
 ````
-- Open the project in mySQL workbench for better understanding of sql scripts.
+- Open the project in mySQL workbench for better understanding of SQL scripts.
+- <a href ="https://dev.mysql.com/downloads/workbench">Install MySQL Workbench </a>
