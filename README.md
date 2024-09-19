@@ -19,3 +19,10 @@ In this repository ,we studied SQL(structure Query Language) using MySQL workben
 <a href="https://github.com/disha-satpute/MySQL/blob/main/companyDB.sql"> Basic SQL Commands</a><br/>
 
 <hr/>
+
+## ☑️Installation
+- Just, Clone this repository - 
+````bash 
+git clone //github.com/disha-satpute/MySQL.git
+````
+- Open the project in mySQL workbench for better understanding of sql scripts.
