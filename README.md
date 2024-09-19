@@ -20,7 +20,7 @@ In this repository ,we studied SQL(structure Query Language) using MySQL workben
 
 <hr/>
 
-## ☑️Installation
+## ☑️Implementation
 - Just, Clone this repository - 
 ````bash 
 git clone //github.com/disha-satpute/MySQL.git
